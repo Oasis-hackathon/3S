@@ -17,8 +17,7 @@
     "helmet": "^4.3.1"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node init.js --delay 2",
-    "deploy": "gh-pages "
+    "start": "babel-node init.js --delay 2"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
