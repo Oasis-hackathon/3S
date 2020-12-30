@@ -12,12 +12,13 @@
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "core-js": "^3.8.1",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "gh-pages": "^3.1.0",
-    "helmet": "^4.3.1"
+    "helmet": "^4.3.1",
+    "morgan": "^1.10.0"
   },
   "scripts": {
-    "start": "babel-node init.js --delay 2"
+    "start": "nodemon --exec babel-node init.js --delay 2"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
