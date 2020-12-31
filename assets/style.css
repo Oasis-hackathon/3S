@@ -1,4 +1,11 @@
+:root{
+    --main-color: #5EBF8B;
+
+}
 body { 
     font-family: 'Noto Sans KR', sans-serif; 
 }
 
+h1{
+    color:red;
+}
