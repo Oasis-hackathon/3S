@@ -27,6 +27,7 @@ p{
 
 .visual{
     position: relative;
+    padding-top: 80px;
 }
 
 .visual .visual-bg{
@@ -109,6 +110,7 @@ p{
 
 
 @media screen and (max-width: 400px) {
+   
     .visual .visual-bg{
         padding:100px 20px;
         height: 100vh;
@@ -128,5 +130,14 @@ p{
 
     
 
+}
+
+@media screen and (max-width: 768px){
+    .visual{
+        padding-top: 65px;
+    }
+    .visual-txt{
+        font-size: small;
+    }
 }
 

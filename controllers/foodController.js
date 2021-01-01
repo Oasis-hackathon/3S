@@ -1,5 +1,8 @@
-export const home = (req, res) => 
+export const home = (req, res) => {
     res.render('home');
+
+
+}
 
 export const foods = (req, res) => res.send('FOOD INDEX');
 export const cheese = (req, res) => res.render('cheese');
