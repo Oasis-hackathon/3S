@@ -1,5 +1,6 @@
 // Global
 const HOME = "/";
+const FOODSEARCH ="/search";
 
 
 //Food
@@ -11,13 +12,15 @@ const FOOD_DUBU = "/dubu";
 const FOOD_CHEESE = "/cheese";
 
 
+
 const routes = {
     home: HOME,
     foods: FOODS,
     egg: FOOD_EGG,
     milk: FOOD_MILK,
     dubu: FOOD_DUBU,
-    cheese: FOOD_CHEESE
+    cheese: FOOD_CHEESE,
+    foodsearch: FOODSEARCH
 }
 
 export default routes;

@@ -22,10 +22,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/assets'));
 app.use(morgan("dev"));
 
-
+app.locals.cdata = require('./assets/src/foods.json');
 
 app.use(routes.home, globalRouter);
 app.use(routes.foods, foodRouter);
-
+app.use(routes.foodsearch,globalRouter);
 
 export default app;

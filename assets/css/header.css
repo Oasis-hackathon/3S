@@ -81,9 +81,12 @@ input{
 .search {
     padding:10px;
 }
-.search .s_search {
+
+.search form{
     display: flex;
     align-items: center;
+}
+.search .s_search {
     transform: translateY(50%);
 }
 

@@ -1,8 +1,10 @@
 :root{
     --black:#2B292D;
     --main-color: #5EBF8B;
+    --gray:#797979;
 
 }
+
 button{
     background-color:var(--main-color);
     border-radius: 5px;
@@ -16,12 +18,19 @@ p{
     word-break: keep-all;
 }
 
+section{
+    padding:100px 0;
+}
 
 .layout{
     width: 1250px;
     margin: 0 auto;
 }
 
+
+.section-desc, .explain-desc{
+    color:var(--gray);
+}
 
 /* Visual */
 
@@ -107,8 +116,65 @@ p{
     color:#fff;
 }
 
+/* Foods */
+
+.foods{
+    padding:100px 0;
+    background-color: #F4F5F7;
+}
 
 
+.foods .container{
+    display:flex;
+    justify-content: center;
+    position:relative;
+}
+
+.foods .section-text{
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.foods [class*="food-li-"]{
+    float: left;
+    max-width: 300px;
+    width:100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin:10px 5%;
+    transform: translate(0);
+}
+
+.foods [class*="food-li-"] img{
+    width:100%;
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+
+.foods .food-li-cheese{
+    margin-top: 200px;
+}
+
+.foods .food-li:last-child::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.food-text{
+    padding:10px 10px;
+}
+
+.food-text *{
+    margin-bottom:10px
+}
+.food-desc{
+    color:var(--gray)
+}
 @media screen and (max-width: 400px) {
    
     .visual .visual-bg{
@@ -127,8 +193,14 @@ p{
         max-width: 200px;
     }
 
+    .foods .section-text {
+        top: -35px;
+    }
 
-    
+    .food-li-cheese{
+        margin-top:50px;
+    }
+
 
 }
 
@@ -139,5 +211,14 @@ p{
     .visual-txt{
         font-size: small;
     }
+
+    
+    
 }
 
+
+@media screen and (max-width: 980px){
+    .foods [class*="food-li-"]{
+        max-width: 500px;
+    }
+}

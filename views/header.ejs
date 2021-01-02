@@ -2,12 +2,12 @@
 <header>
     <div class="header" id="hd">
         <div class="logo logo-pc">
-            <a href="none">
+            <a href="/">
                 <img src="image/logo.png" alt="Foodprint_logo"/>
             </a>
         </div>
         <div class="logo logo-mobile">
-            <a href="none">
+            <a href="/">
                 <img src="image/logo-small.png" alt="Foodprint_logo" />
             </a>
         </div>
@@ -23,12 +23,13 @@
         </ul>
         <div class="search">
             <div class="s_search">
-                <input type="text" value="" placeholder="Search Keyword"/>
-                <div class="search_link">
-                    <a href="#">
+                <form action="/search" method="get" URIEncoding="utf-8">
+                    <input type="text" name="food" placeholder="Search Keyword"/>
+                    <button type="submit" class="search_link">
                         <img src="image/search1.png" width="30px"/>
-                    </a>
-                </div>
+                </button>
+                </form>
+               
             </div>
         </div>
         <div class="gnb-btn-area">
