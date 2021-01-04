@@ -2,8 +2,8 @@ body {
   overflow-x: hidden;
 }
 
-/* yogurt */
-.wrap_yogurt {
+/* egg */
+.wrap_egg {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -13,40 +13,41 @@ body {
   overflow: hidden;
 }
 
-/* yogurt_visual */
+/* egg_visual */
 
-.visual_yogurt .explain_yogurt {
+.visual_egg .explain_egg {
   position: absolute;
   top: 15%;
   right: 65%;
   z-index: 1;
-  color: white;
+  color: rgb(240, 156, 100);
+  text-shadow: 0 0 10px #f4f5f7;
 }
-.visual_yogurt .explain_yogurt p {
+.visual_egg .explain_egg p {
   font-style: oblique;
 }
-.visual_yogurt .explain_yogurt h2 {
+.visual_egg .explain_egg h2 {
   font-size: 60px;
 }
-.visual_yogurt .explain_yogurt h3 {
+.visual_egg .explain_egg h3 {
   font-size: 30px;
 }
-.visual_yogurt .dates_yogurt {
+.visual_egg .dates_egg {
   position: absolute;
   top: 170%;
 }
-.visual_yogurt .dates_yogurt h4 {
+.visual_egg .dates_egg h4 {
   display: inline-block;
   font-size: 55px;
   top: 50%;
 }
-.visual_yogurt .dates_yogurt p {
+.visual_egg .dates_egg p {
   display: inline-block;
   font-size: 17px;
   text-align: left;
 }
 
-.visual_yogurt .main_yogurt img {
+.visual_egg .main_egg img {
   position: absolute;
   top: 15%;
   left: 65%;
@@ -57,35 +58,35 @@ body {
   z-index: 1;
   box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
 }
-.visual_yogurt .background_yogurt img {
+.visual_egg .background_egg img {
   height: 600px;
   width: 100vw;
   object-fit: cover;
   opacity: 0.9;
 }
 
-/* yogurt_storage */
-.storage_yogurt {
+/* egg_storage */
+.storage_egg {
   position: relative;
   margin: 70px 0px 70px 0px;
 }
-.storage_yogurt .storage_title_yogurt {
+.storage_egg .storage_title_egg {
   margin: 0px 0px 40px 0px;
   text-align: center;
   line-height: 2;
 }
-.storage_yogurt .storage_title_yogurt h3 {
+.storage_egg .storage_title_egg h3 {
   font-size: 40px;
 }
-.storage_yogurt .storage_title_yogurt p {
+.storage_egg .storage_title_egg p {
   font-size: 15px;
 }
-.storage_yogurt .storage {
+.storage_egg .storage {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.storage_main_yogurt {
+.storage_main_egg {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -97,11 +98,11 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.storage_main_yogurt div{
-  margin: 60px 60px 40px 60px;
+.storage_main_egg div{
+  margin: 45px 60px 40px 60px;
   font-size: 30px;
 }
-.storage_main_yogurt P {
+.storage_main_egg P {
   margin-left: 60px;
   font-size: 23px;
   line-height: 2;
@@ -111,184 +112,188 @@ body {
 
 
 
-/* yogurt_recipe */
+/* egg_recipe */
 
-.recipe_yogurt {
+.recipe_egg {
   position: relative;
   margin: 70px 0px 70px 0px;
 }
-.recipe_yogurt .recipe_title_yogurt {
+.recipe_egg .recipe_title_egg {
   margin: 0px 0px 40px 0px;
   text-align: center;
   line-height: 2;
 }
-.recipe_yogurt .recipe_title_yogurt h3 {
+.recipe_egg .recipe_title_egg h3 {
   font-size: 40px;
 }
-.recipe_yogurt .recipe_title_yogurt p {
+.recipe_egg .recipe_title_egg p {
   font-size: 15px;
   color: rgb(116, 116, 116);
 }
-.recipe_yogurt .recipe_items_yogurt {
+.recipe_egg .recipe_items_egg {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.recipe_yogurt .recipe_items_yogurt .recipe_item1_yogurt {
+.recipe_egg .recipe_items_egg .recipe_item1_egg {
   width: 550px;
-  height: 480px;
+  height: 660px;
+  margin: 30px 30px 0px 30px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.recipe_egg .recipe_items_egg .recipe_item2_egg {
+  width: 550px;
+  height: 500px;
   margin: 30px;
   border-radius: 30px;
   background: #fff;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
-.recipe_yogurt .recipe_items_yogurt .recipe_item2_yogurt {
-  width: 550px;
-  height: 480px;
-  margin: 30px;
-  border-radius: 30px;
-  background: #fff;
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-}
-.recipe_yogurt .recipe_items_yogurt p {
+.recipe_egg .recipe_items_egg p {
   margin: 30px 50px 50px 50px;
   line-height: 2;
   font-size: 20px;
 }
-.recipe_yogurt .recipe_items_yogurt .menu_title {
+.recipe_egg .recipe_items_egg .menu_title {
   display: flex;
   margin: 20px 20px 0 20px;
 }
-.recipe_yogurt .recipe_items_yogurt .menu_name h3 {
+.recipe_egg .recipe_items_egg .menu_name h3 {
   margin: 30px 10px 10px 10px;
   font-size: 36px;
 }
-.recipe_yogurt .recipe_items_yogurt .menu_name p {
+.recipe_egg .recipe_items_egg .menu_name p {
   margin: 30px 10px 10px 10px;
+  line-height: 2;
   font-size: 18px;
 }
 
-.recipe_yogurt .recipe_items_yogurt .recipe_item1_yogurt .menu_title img {
-  width: 200px;
-  height: auto;
-}
-.recipe_yogurt .recipe_items_yogurt .recipe_item2_yogurt .menu_title img {
+.recipe_egg .recipe_items_egg .recipe_item1_egg .menu_title img {
+  margin: 20px 20px 0px 10px;
   width: 170px;
-  height: auto;
+  height: 170px;
 }
-.recipe_yogurt .recipe_items_yogurt .recipe_item2_yogurt .menu_name {
+.recipe_egg .recipe_items_egg .recipe_item2_egg .menu_title img {
+  margin: 10px;
+  width: 180px;
+  height: 180px;
+}
+.recipe_egg .recipe_items_egg .recipe_item2_egg .menu_name {
   margin: 0px 0px 0px 30px;
 }
 
-/* yogurt_recycling */
-.recycling_yogurt {
+/* egg_recycling */
+.recycling_egg {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  align-self: left;
-  margin: 70px 140px 70px 140px;
+  align-self: right;
+  margin: 0px 140px 70px 140px;
 }
-.recycling_yogurt .recycling_title_yogurt {
-  margin-left: 60px;
+.recycling_egg .recycling_title_egg {
+  margin-right: 60px;
   margin-bottom: 30px;
-  text-align: left;
+  text-align: right;
   line-height: 2;
 }
-.recycling_yogurt .recycling_title_yogurt h3 {
+.recycling_egg .recycling_title_egg h3 {
   font-size: 40px;
 }
-.recycling_yogurt .recycling_title_yogurt p {
+.recycling_egg .recycling_title_egg p {
   font-size: 15px;
   color: rgb(116, 116, 116);
 }
-.recycling_yogurt .recycling_items_yogurt {
+.recycling_egg .recycling_items_egg {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: right;
 }
-.recycling_yogurt .recycling_items_yogurt .recycling_item1_yogurt {
+.recycling_egg .recycling_items_egg .recycling_item1_egg {
   height: 450px;
   width: 800px;
   margin: 40px;
   border-radius: 30px;
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-left: 400px;
 }
-.recycling_yogurt .recycling_items_yogurt .recycling_item1_yogurt .menu_title {
+.recycling_egg .recycling_items_egg .recycling_item1_egg .menu_title {
   display: flex;
   margin: 30px;
   margin-bottom: 50px;
   flex-direction: row;
 }
-.recycling_yogurt
-  .recycling_items_yogurt
-  .recycling_item1_yogurt
+.recycling_egg
+  .recycling_items_egg
+  .recycling_item1_egg
   .menu_title
   img {
   height: 200px;
   width: auto;
 }
-.recycling_yogurt
-  .recycling_items_yogurt
-  .recycling_item1_yogurt
+.recycling_egg
+  .recycling_items_egg
+  .recycling_item1_egg
   .menu_title
   h3 {
   margin: 30px 200px 0px 30px;
   font-size: 40px;
 }
-.recycling_yogurt
-  .recycling_items_yogurt
-  .recycling_item1_yogurt
+.recycling_egg
+  .recycling_items_egg
+  .recycling_item1_egg
   .menu_title
   h4 {
   margin: 5px 60px 20px 30px;
   font-size: 25px;
 }
-.recycling_yogurt .recycling_items_yogurt .recycling_item2_yogurt .menu_title {
+.recycling_egg .recycling_items_egg .recycling_item2_egg .menu_title {
   display: flex;
   margin: 30px;
   margin-bottom: 50px;
   flex-direction: row;
 }
-.recycling_yogurt
-  .recycling_items_yogurt
-  .recycling_item2_yogurt
+.recycling_egg
+  .recycling_items_egg
+  .recycling_item2_egg
   .menu_title
   img {
   height: 200px;
   width: auto;
   margin: 40px 30px 40px 30px;
 }
-.recycling_yogurt
-  .recycling_items_yogurt
-  .recycling_item2_yogurt
+.recycling_egg
+  .recycling_items_egg
+  .recycling_item2_egg
   .menu_title
   h3 {
   margin: 30px 100px 0px 30px;
   font-size: 40px;
 }
-.recycling_yogurt
-  .recycling_items_yogurt
-  .recycling_item2_yogurt
+.recycling_egg
+  .recycling_items_egg
+  .recycling_item2_egg
   .menu_title
   h4 {
   margin: 5px 60px 40px 30px;
   font-size: 25px;
 }
 
-.recycling_yogurt .recycling_items_yogurt .recycling_item1_yogurt p {
+.recycling_egg .recycling_items_egg .recycling_item1_egg p {
   margin: 0px 40px 0px 60px;
   font-size: 21px;
   line-height: 2;
 }
-.recycling_yogurt .recycling_items_yogurt .recycling_item2_yogurt p {
+.recycling_egg .recycling_items_egg .recycling_item2_egg p {
   margin: 10px 40px 0px 30px;
   font-size: 21px;
   line-height: 2;
 }
-.recycling_yogurt .recycling_items_yogurt .recycling_item2_yogurt {
+.recycling_egg .recycling_items_egg .recycling_item2_egg {
   height: 350px;
   width: 1160px;
   margin: 40px;
@@ -298,28 +303,47 @@ body {
 }
 
 /* 배경 꾸미기 */
-.page_yogurt .page_yogurt1 {
-  position: absolute;
-  top: 2600px;
-  left: 1400px;
-}
-.page_yogurt .page_yogurt2 {
+.page_egg .page_egg1 {
   position: absolute;
   top: 2100px;
-  left: 1150px;
+  left: 850px;
 }
-.page_yogurt .page_yogurt3 {
+.page_egg .page_egg2 {
   position: absolute;
-  top: 1100px;
-  left: -270px;
+  top: 1250px;
+  left: -40px;
 }
-.page_yogurt .page_yogurt1 img {
-  width: 200px;
+.page_egg .page_egg3 {
+  position: absolute;
+  top: 890px;
+  left: 970px;
+}
+.page_egg .page_egg4 {
+  position: absolute;
+  top: 2400px;
+  left: 0px;
+}
+.page_egg .page_egg1 img {
+  width: 400px;
+  height: auto;
+}
+.page_egg .page_egg2 img {
+  width: 350px;
+  height: auto;
+}
+.page_egg .page_egg3 img {
+  width: 300px;
+  height: auto;
+}
+.page_egg .page_egg4 img {
+  width: 500px;
   height: auto;
 }
 
+
+
 @media screen and (max-width: 1400px) {
-  .page_yogurt {
+  .page_egg {
     display: none;
   }
 }
