@@ -1,286 +1,291 @@
-
 /* yogurt */
 .wrap_yogurt {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    background-color: #F4F5F7;
-    overflow: hidden;
-  }
-  
-  /* yogurt_visual */
-  
-  .visual_yogurt .explain_yogurt {
-    position: absolute;
-    top: 15%;
-    right: 65%;
-    z-index: 1;
-    color: white;
-  }
-  .visual_yogurt .explain_yogurt p {
-    font-style: oblique;
-  }
-  .visual_yogurt .explain_yogurt h2 {
-    font-size: 60px;
-  }
-  .visual_yogurt .explain_yogurt h3 {
-    font-size: 30px;
-  }
-  .visual_yogurt .dates_yogurt {
-    position: absolute;
-    top: 170%;
-  }
-  .visual_yogurt .dates_yogurt h4 {
-    display: inline-block;
-    font-size: 55px;
-    top: 50%;
-  }
-  .visual_yogurt .dates_yogurt p {
-    display: inline-block;
-    font-size: 12px;
-    text-align: left;
-  }
-  
-  .visual_yogurt .main_yogurt img {
-    position: absolute;
-    top: 15%;
-    left: 65%;
-    border-radius: 5%;
-    height: 330px;
-    width: 250px;
-    object-fit: cover;
-    z-index: 1;
-    box-shadow:  2px 2px 20px 0 rgba(0, 0, 0, 0.2);
-  }
-  .visual_yogurt .background_yogurt img {
-    height: 500px;
-    width: 100vw;
-    object-fit: cover;
-    opacity: 0.9;
-  }
-  
-  /* yogurt_recipe */
-  
-  .recipe_yogurt {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin: 70px 0px 70px 0px;
-  }
-  .recipe_yogurt .recipe_title_yogurt {
-    margin: 0px 0px 40px 0px;
-    text-align: center;
-    line-height: 2;
-  }
-  .recipe_yogurt .recipe_title_yogurt h3 {
-    font-size: 40px;
-  }
-  .recipe_yogurt .recipe_title_yogurt p {
-    font-size: 15px;
-    color: rgb(116, 116, 116);
-  }
-  .recipe_yogurt .recipe_items_yogurt {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .recipe_yogurt .recipe_items_yogurt .recipe_item1_yogurt {
-    height: 300px;
-    width: 500px;
-    margin: 30px;
-    border-radius: 30px;
-    background: #fff;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  }
-  .recipe_yogurt .recipe_items_yogurt .recipe_item2_yogurt {
-    height: 300px;
-    width: 500px;
-    margin: 30px;
-    border-radius: 30px;
-    background: #fff;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f5f7;
+  overflow: hidden;
+}
+
+/* yogurt_visual */
+
+.visual_yogurt .explain_yogurt {
+  position: absolute;
+  top: 15%;
+  right: 65%;
+  z-index: 1;
+  color: white;
+}
+.visual_yogurt .explain_yogurt p {
+  font-style: oblique;
+}
+.visual_yogurt .explain_yogurt h2 {
+  font-size: 60px;
+}
+.visual_yogurt .explain_yogurt h3 {
+  font-size: 30px;
+}
+.visual_yogurt .dates_yogurt {
+  position: absolute;
+  top: 170%;
+}
+.visual_yogurt .dates_yogurt h4 {
+  display: inline-block;
+  font-size: 55px;
+  top: 50%;
+}
+.visual_yogurt .dates_yogurt p {
+  display: inline-block;
+  font-size: 12px;
+  text-align: left;
+}
+
+.visual_yogurt .main_yogurt img {
+  position: absolute;
+  top: 15%;
+  left: 65%;
+  border-radius: 5%;
+  height: 330px;
+  width: 250px;
+  object-fit: cover;
+  z-index: 1;
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.visual_yogurt .background_yogurt img {
+  height: 600px;
+  width: 100vw;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+/* yogurt_recipe */
+
+.recipe_yogurt {
+  position: relative;
+  margin: 70px 0px 70px 0px;
+}
+.recipe_yogurt .recipe_title_yogurt {
+  margin: 0px 0px 40px 0px;
+  text-align: center;
+  line-height: 2;
+}
+.recipe_yogurt .recipe_title_yogurt h3 {
+  font-size: 40px;
+}
+.recipe_yogurt .recipe_title_yogurt p {
+  font-size: 15px;
+  color: rgb(116, 116, 116);
+}
+.recipe_yogurt .recipe_items_yogurt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.recipe_yogurt .recipe_items_yogurt .recipe_item1_yogurt {
+  width: 550px;
+  height: 480px;
+  margin: 30px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.recipe_yogurt .recipe_items_yogurt .recipe_item2_yogurt {
+  width: 550px;
+  height: 480px;
+  margin: 30px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.recipe_yogurt .recipe_items_yogurt p {
+  margin: 30px 50px 50px 50px;
+  line-height: 2;
+  font-size: 20px;
+}
+.recipe_yogurt .recipe_items_yogurt .menu_title {
+  display: flex;
+  margin: 20px 20px 0 20px;
+}
+.recipe_yogurt .recipe_items_yogurt .menu_name h3 {
+  margin: 30px 10px 10px 10px;
+  font-size: 36px;
+}
+.recipe_yogurt .recipe_items_yogurt .menu_name p {
+  margin: 30px 10px 10px 10px;
+  font-size: 18px;
+}
+
+.recipe_yogurt .recipe_items_yogurt .recipe_item1_yogurt .menu_title img {
+  width: 200px;
+  height: auto;
+}
+.recipe_yogurt .recipe_items_yogurt .recipe_item2_yogurt .menu_title img {
+  width: 170px;
+  height: auto;
+}
+.recipe_yogurt .recipe_items_yogurt .recipe_item2_yogurt .menu_name {
+  margin: 0px 0px 0px 30px;
+}
+
+/* yogurt_recycling */
+.recycling_yogurt {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-self: left;
+  margin: 70px 140px 70px 140px;
+}
+.recycling_yogurt .recycling_title_yogurt {
+  margin-left: 60px;
+  margin-bottom: 30px;
+  text-align: left;
+  line-height: 2;
+}
+.recycling_yogurt .recycling_title_yogurt h3 {
+  font-size: 40px;
+}
+.recycling_yogurt .recycling_title_yogurt p {
+  font-size: 15px;
+  color: rgb(116, 116, 116);
+}
+.recycling_yogurt .recycling_items_yogurt {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.recycling_yogurt .recycling_items_yogurt .recycling_item1_yogurt {
+  height: 450px;
+  width: 800px;
+  margin: 40px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.recycling_yogurt .recycling_items_yogurt .recycling_item1_yogurt .menu_title {
+  display: flex;
+  margin: 30px;
+  margin-bottom: 50px;
+  flex-direction: row;
+}
+.recycling_yogurt
+  .recycling_items_yogurt
+  .recycling_item1_yogurt
+  .menu_title
+  img {
+  height: 200px;
+  width: auto;
+}
+.recycling_yogurt
+  .recycling_items_yogurt
+  .recycling_item1_yogurt
+  .menu_title
+  h3 {
+  margin: 30px 100px 0px 60px;
+  font-size: 40px;
+}
+.recycling_yogurt
+  .recycling_items_yogurt
+  .recycling_item1_yogurt
+  .menu_title
+  h4 {
+  margin: 5px 60px 20px 60px;
+  font-size: 25px;
+}
+.recycling_yogurt .recycling_items_yogurt .recycling_item2_yogurt .menu_title {
+  display: flex;
+  margin: 30px;
+  margin-bottom: 50px;
+  flex-direction: row;
+}
+.recycling_yogurt
+  .recycling_items_yogurt
+  .recycling_item2_yogurt
+  .menu_title
+  img {
+  height: 200px;
+  width: auto;
+  margin: 40px 30px 40px 30px;
+}
+.recycling_yogurt
+  .recycling_items_yogurt
+  .recycling_item2_yogurt
+  .menu_title
+  h3 {
+  margin: 30px 100px 0px 60px;
+  font-size: 40px;
+}
+.recycling_yogurt
+  .recycling_items_yogurt
+  .recycling_item2_yogurt
+  .menu_title
+  h4 {
+  margin: 5px 60px 40px 60px;
+  font-size: 25px;
+}
+
+.recycling_yogurt .recycling_items_yogurt .recycling_item1_yogurt p {
+  margin: 0px 40px 0px 60px;
+  font-size: 21px;
+  line-height: 2;
+}
+.recycling_yogurt .recycling_items_yogurt .recycling_item2_yogurt p {
+  margin: 10px 40px 0px 60px;
+  font-size: 21px;
+  line-height: 2;
+}
+.recycling_yogurt .recycling_items_yogurt .recycling_item2_yogurt {
+  height: 350px;
+  width: 1160px;
+  margin: 40px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 배경 꾸미기 */
+.page_yogurt .page_yogurt1 {
+  position: absolute;
+  top: 2000px;
+  left: 1400px;
+}
+.page_yogurt .page_yogurt2 {
+  position: absolute;
+  top: 1500px;
+  left: 1150px;
+}
+.page_yogurt .page_yogurt3 {
+  position: absolute;
+  top: 800px;
+  left: -270px;
+}
+.page_yogurt .page_yogurt1 img {
+  width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 1400px) {
   .recipe_yogurt .page_yogurt {
-    position: absolute;
-    top: 600px;
-    left: -270px;
+    display: none;
   }
-  
-  /* yogurt_recycling */
-  .recycling_yogurt {
-    display: flex;
-    flex-direction: column;
-    align-self: left;
-    margin: 70px 0px 70px 0px;
+  .recycling_yogurt .page_yogurt {
+    display: none;
   }
-  .recycling_yogurt .recycling_title_yogurt {
-    margin: 0px 0px 40px 200px;
-    text-align: left;
-    line-height: 2;
-  }
-  .recycling_yogurt .recycling_title_yogurt h3 {
-    font-size: 40px;
-  }
-  .recycling_yogurt .recycling_title_yogurt p {
-    font-size: 15px;
-    color: rgb(116, 116, 116);
+}
+@media screen and (max-width: 1000px) {
+  .recycling_yogurt .recycling_items_yogurt .recycling_item_yogurt {
+    height: 800px;
+    width: 500px;
   }
   .recycling_yogurt .recycling_items_yogurt {
-    margin-left: 150px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
+    margin-left: 0px;
+    justify-content: center;
   }
-  .recycling_yogurt .recycling_items_yogurt .recycling_item_yogurt {
-    height: 650px;
-    width: 650px;
-    margin: 30px;
-    border-radius: 30px;
-    background: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .recycling_yogurt .page_yogurt .page_yogurt1 {
-    position: absolute;
-    top: 1200px;
-    right: 50px;
-  }
-  .recycling_yogurt .page_yogurt .page_yogurt2 {
-    position: absolute;
-    top: 1700px;
-    right: 50px;
-  }
-  .recycling_yogurt .page_yogurt .page_yogurt2 img{
-    width: 200px;
-    height: auto;
-  }
-  
-  /* introduce */
-  .wrap_introduce {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(228, 228, 228);
-    overflow: hidden;
-    
-  }
-  
-  /* 소개 */
-  
-  .visual_introduce .explain_introduce {
-    position: relative;
-    margin-top: 100px;
+  .recycling_yogurt .recycling_title_yogurt {
+    margin: 0px 0px 40px 0px;
     text-align: center;
   }
-  .visual_introduce .explain_introduce h2{
-    color: #000000;
-    font-size: 60px;
-    line-height: 1.7;
-  }
-  .visual_introduce .explain_introduce p{
-    color: rgb(61, 61, 61);
-    font-size: 20px;
-  }
-  .meaning_introduce {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin: 70px 0px 70px 0px;
-  }
-  .meaning_introduce .dates {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-  }
-  .meaning_introduce .dates .sellbydate:hover {
-    height: 700px;
-    width: 350px;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-  }
-  .meaning_introduce .dates .sellbydate .click:hover {
-    cursor: pointer;
-  }
-  .meaning_introduce .dates .usebydate:hover {
-    height: 700px;
-    width: 350px;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  .meaning_introduce .dates .bestbydate:hover {
-    height: 700px;
-    width: 350px;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  .meaning_introduce .dates div{
-    margin: 35% 10% 0 10%;
-  }
-  .meaning_introduce .dates h2{
-    font-size: 40px;
-  }
-  .meaning_introduce .dates h3{
-    font-size: 30px;
-  }
-  .meaning_introduce .dates p{
-    margin: 35% 0 -15% 0;
-  }
-  .meaning_introduce .dates .sellbydate {
-    height: 650px;
-    width: 300px;
-    margin: 20px;
-    margin-top: 80px;
-    border-radius: 1%;
-    background: #fff;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
-  }
-  .meaning_introduce .dates .usebydate {
-    height: 650px;
-    width: 300px;
-    margin: 20px;
-    border-radius: 1%;
-    background: #fff;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
-  }
-  .meaning_introduce .dates .bestbydate {
-    height: 650px;
-    width: 300px;
-    margin: 20px;
-    margin-top: 60px;
-    border-radius: 1%;
-    background: #fff;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
-  }
-  
-  
-  @media screen and (max-width: 1400px) {
-    .recipe_yogurt .page_yogurt {
-      display: none;
-    }
-    .recycling_yogurt .page_yogurt {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    .recycling_yogurt .recycling_items_yogurt .recycling_item_yogurt {
-      height: 800px;
-      width: 500px;
-    }
-    .recycling_yogurt .recycling_items_yogurt {
-      margin-left: 0px;
-      justify-content: center;
-    }
-    .recycling_yogurt .recycling_title_yogurt {
-      margin: 0px 0px 40px 0px;
-      text-align: center;
-    }
-  }
+}
