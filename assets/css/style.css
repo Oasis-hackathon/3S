@@ -1,224 +1,329 @@
-:root{
-    --black:#2B292D;
-    --main-color: #5EBF8B;
-    --gray:#797979;
-
+:root {
+  --black: #2b292d;
+  --main-color: #5ebf8b;
+}
+button {
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #2b292d;
 }
 
-button{
-    background-color:var(--main-color);
-    border-radius: 5px;
-}
-body { 
-    font-family: 'Noto Sans KR', sans-serif; 
-    color:#2B292D;
+p {
+  word-break: keep-all;
 }
 
-p{
-    word-break: keep-all;
+.layout {
+  width: 1250px;
+  margin: 0 auto;
 }
 
-section{
-    padding:100px 0;
-}
-
-.layout{
-    width: 1250px;
-    margin: 0 auto;
-}
-
-
-.section-desc, .explain-desc{
-    color:var(--gray);
+/* Wrap */
+.wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* Visual */
-
-.visual{
-    position: relative;
-    padding-top: 80px;
+.visual {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+.visual .section input[id*="slide"] {
+  display: none;
 }
 
-.visual .visual-bg{
-    background-color: var(--main-color);
-    width: 100%;
-    height:50vh;
-    padding:35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.visual .section .slide-wrap {
+  margin: 0 auto;
+}
+.visual .section .slidelist {
+  white-space: nowrap;
+  font-size: 0;
+  overflow: hidden;
+}
+.visual .section .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+.visual .section .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+.visual .section .slidelist > li > a img {
+  height: 500px;
+  width: 100vw;
+  object-fit: cover;
+}
+.visual .section .slidelist label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  cursor: pointer;
+  opacity: 0;
+}
+.visual .section .slidelist .left {
+  left: 30px;
+  opacity: 1;
+  background: url(/image/left.png) center center / 100% no-repeat;
+}
+.visual .section .slidelist .right {
+  right: 30px;
+  opacity: 1;
+  background: url(/image/right.png) center center / 100% no-repeat;
+}
+.visual .section .slidelist .textbox {
+  position: absolute;
+  z-index: 1;
+  top: 65%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  line-height: 1.7;
+  text-align: left;
 }
 
-.visual .visual-txt{
-    word-break: keep-all;
-    margin-right: 40px;
+.visual .section .slidelist .textbox h3 {
+  font-size: 34px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s;
 }
-.visual .visual-txt>*{
-    margin-bottom: 5px;
-}
-.visual .visual-img{
-    display: block;
-    max-width: 350px;
-    width: 100%;
-}
-
-.visual-img img{
-    width:90%;
+.visual .section .slidelist .textbox p {
+  font-size: 26px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s;
 }
 
+.visual .section input[id="slide01"]:checked ~ .slide-wrap .slidelist > li {
+  transform: translateX(0%);
+}
+.visual .section input[id="slide02"]:checked ~ .slide-wrap .slidelist > li {
+  transform: translateX(-100%);
+}
+.visual .section input[id="slide03"]:checked ~ .slide-wrap .slidelist > li {
+  transform: translateX(-200%);
+}
+
+.visual
+  .section
+  input[id="slide01"]:checked
+  ~ .slide-wrap
+  li:nth-child(1)
+  .textbox
+  h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.visual
+  .section
+  input[id="slide01"]:checked
+  ~ .slide-wrap
+  li:nth-child(1)
+  .textbox
+  p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+.visual
+  .section
+  input[id="slide02"]:checked
+  ~ .slide-wrap
+  li:nth-child(2)
+  .textbox
+  h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.visual
+  .section
+  input[id="slide02"]:checked
+  ~ .slide-wrap
+  li:nth-child(2)
+  .textbox
+  p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+.visual
+  .section
+  input[id="slide03"]:checked
+  ~ .slide-wrap
+  li:nth-child(3)
+  .textbox
+  h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.visual
+  .section
+  input[id="slide03"]:checked
+  ~ .slide-wrap
+  li:nth-child(3)
+  .textbox
+  p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
 
 /* Explain */
 
-.explain{
-    padding:80px 0;
+.explain {
+  padding: 80px 0;
 }
 
-.explain .col-12{
-    margin-bottom: 40px;
+.explain .col-12 {
+  margin-bottom: 40px;
 }
 
-.explain .explain-title{
-    font-size: 30px;
-    margin-bottom: 10px;
+.explain .explain-title {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-.explain .explain-desc{
-    margin-bottom: 15px;
+.explain .explain-desc {
+  margin-bottom: 15px;
 }
 
-.explain .explain-detail{
-    display: inline-block;
+.explain .explain-detail {
+  display: inline-block;
 }
 
-.explain-detail:first-of-type{
-    margin-right: 15px;
-    margin-bottom:10px;
+.explain-detail:first-of-type {
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
-.explain-detail strong{
-    font-size: 30px;
-    color:var(--main-color);
+.explain-detail strong {
+  font-size: 30px;
+  color: var(--main-color);
 }
 
-.explain .button-area{
-    width: 100%;
-    padding: 25px 0;
+.explain .button-area {
+  width: 100%;
+  padding: 25px 0;
 }
-.explain button{
-    border-radius: 50px;
-    width:220px;
-    height:50px;
-    font-weight: bold;
-
+.explain button {
+  border-radius: 50px;
+  width: 220px;
+  height: 50px;
+  font-weight: bold;
 }
 
-.explain button:hover{
-    color:#fff;
+.explain button:hover {
+  color: #fff;
 }
 
 /* Foods */
 
 .foods{
-    padding:100px 0;
-    background-color: #F4F5F7;
+  padding:100px 0;
+  background-color: #F4F5F7;
 }
 
 
 .foods .container{
-    display:flex;
-    justify-content: center;
-    position:relative;
+  display:flex;
+  justify-content: center;
+  position:relative;
 }
 
 .foods .section-text{
-    position: absolute;
-    top: 0;
-    left: 50px;
+  position: absolute;
+  top: 0;
+  left: 50px;
 }
 
 .foods [class*="food-li-"]{
-    float: left;
-    max-width: 300px;
-    width:100%;
-    border-radius: 20px;
-    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    margin:10px 5%;
-    transform: translate(0);
+  float: left;
+  max-width: 300px;
+  width:100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin:10px 5%;
+  transform: translate(0);
 }
 
 .foods [class*="food-li-"] img{
-    width:100%;
-    border-radius: 20px 20px 0 0;
+  width:100%;
+  border-radius: 20px 20px 0 0;
 }
 
-
-
-
 .foods .food-li-cheese{
-    margin-top: 200px;
+  margin-top: 200px;
 }
 
 .foods .food-li:last-child::after{
-    content: '';
-    display: block;
-    clear: both;
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .food-text{
-    padding:10px 10px;
+  padding:10px 10px;
 }
 
 .food-text *{
-    margin-bottom:10px
+  margin-bottom:10px
 }
 .food-desc{
-    color:var(--gray)
+  color:var(--gray)
 }
+
 @media screen and (max-width: 400px) {
-   
-    .visual .visual-bg{
-        padding:100px 20px;
-        height: 100vh;
-        align-items: unset;
-    }
-    .visual .visual-txt{
-        width:500px;
-        margin-right: 0;
-    }
-    .visual .visual-img{
-        position:absolute;
-        bottom:15%;
-        right: 0;
-        max-width: 200px;
-    }
+  .visual .visual-bg {
+    padding: 100px 20px;
+    height: 100vh;
+    align-items: unset;
+  }
+  .visual .visual-txt {
+    width: 500px;
+    margin-right: 0;
+  }
+  .visual .visual-img {
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    max-width: 200px;
+  }
 
-    .foods .section-text {
-        top: -35px;
-    }
+  
+  .foods .section-text {
+    top: -35px;
+}
 
-    .food-li-cheese{
-        margin-top:50px;
-    }
-
+.food-li-cheese{
+    margin-top:50px;
+}
 
 }
 
-@media screen and (max-width: 768px){
-    .visual{
-        padding-top: 65px;
-    }
-    .visual-txt{
-        font-size: small;
-    }
-
-    
-    
+@media screen and (max-width: 768px) {
+  .visual {
+    padding-top: 65px;
+  }
+  .visual-txt {
+    font-size: small;
+  }
 }
-
 
 @media screen and (max-width: 980px){
-    .foods [class*="food-li-"]{
-        max-width: 500px;
-    }
+  .foods [class*="food-li-"]{
+      max-width: 500px;
+  }
 }

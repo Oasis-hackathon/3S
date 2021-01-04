@@ -1,0 +1,101 @@
+/* introduce */
+.wrap_introduce {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F5F7;
+    overflow: hidden;
+    
+  }
+  
+  /* 소개 */
+  
+  .visual_introduce .explain_introduce {
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .visual_introduce .explain_introduce h2{
+    color: #000000;
+    font-size: 60px;
+    line-height: 1.7;
+  }
+  .visual_introduce .explain_introduce p{
+    color: rgb(61, 61, 61);
+    font-size: 20px;
+  }
+  .meaning_introduce {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 70px 0px 70px 0px;
+  }
+  .meaning_introduce .dates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+  }
+  .meaning_introduce .dates .sellbydate:hover {
+    height: 700px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+  }
+  .meaning_introduce .dates .sellbydate .click:hover {
+    cursor: pointer;
+  }
+  .meaning_introduce .dates .usebydate:hover {
+    height: 700px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .meaning_introduce .dates .bestbydate:hover {
+    height: 700px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .meaning_introduce .dates div{
+    margin: 35% 10% 0 10%;
+  }
+  .meaning_introduce .dates h2{
+    font-size: 40px;
+  }
+  .meaning_introduce .dates h3{
+    font-size: 30px;
+  }
+  .meaning_introduce .dates p{
+    margin: 35% 0 -15% 0;
+  }
+  .meaning_introduce .dates .sellbydate {
+    height: 650px;
+    width: 300px;
+    margin: 20px;
+    margin-top: 80px;
+    border-radius: 1%;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  .meaning_introduce .dates .usebydate {
+    height: 650px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 1%;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  .meaning_introduce .dates .bestbydate {
+    height: 650px;
+    width: 300px;
+    margin: 20px;
+    margin-top: 60px;
+    border-radius: 1%;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
