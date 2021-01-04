@@ -85,7 +85,7 @@ section{
 .visual .section .slidelist .textbox {
   position: absolute;
   z-index: 1;
-  top: 65%;
+  top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
   line-height: 1.7;

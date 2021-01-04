@@ -6,25 +6,29 @@
     <div class="wrap">
         <div class="foods foodsearch">
             <h1>검색결과<%-searching%></h1>
-            <p><% if(Object.keys(foods).length === {} || Object.keys(foods).length === 0){%></p>
-                <h5>No Search foods   🤢 <br>
-                    더 많은 음식들은 준비중입니다.    
-                </h5>
+            <% if(Object.keys(foods).length === {} || Object.keys(foods).length === 0){%>
+                <div class="no-search">
+                    <h5>No Search foods   🤢 <br>
+                        더 많은 음식들은 준비중입니다.    
+                    </h5>
+                </div>
             <%} else {%>
-                <a href="<%= foods.href %>">
+                
                     <li class="food-li-<%=foods.engName%>">
+                        <a href="<%= foods.href %>"></a>
                         <div class="food-img">
                             <img src="<%= foods.img %>" alt="<% foods.name %>">
                         </div>
                         <div class="food-text">
                                 <h3 class="food-title">
-                                    <%= foods.name %>의 소비기한을 알아보고<br> 지구 지키기에 동참하세요🌏
+                                    <%= foods.name %>의 소비기한을 알아보고 지구 지키기에 동참하세요🌏
                                 </h3>
     
-                            <p class="food-desc"><%= foods.desc %></p>
+                                <p class="food-desc">올바른 보관방법, 소비기한을 알아보고 재료를 활용할 수 있는 다양한 방법을 알아보세요!</p>
                         </div>
+                    </a>
                     </li>
-                </a>
+               
                 <!-- 서치결과 보여주고 링크 걸어주기-->
             <% }%>
             
@@ -32,7 +36,4 @@
         </div>
     </div>
 </body>
-<script>
-    
-</script>
 <%- include ('./tail') %>
