@@ -256,15 +256,21 @@ section{
   left: 50px;
 }
 
-.foods [class*="food-li-"]{
+.foods [class*="food-li-"] {
   float: left;
-  max-width: 300px;
-  width:100%;
+  max-width: 35.5%;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
-  margin:10px 5%;
+  /* margin: 10px 5%; */
+  margin: 10px 2%;
   transform: translate(0);
+}
+
+.foods .food-img{
+  height: 450px;
+  overflow: hidden;
 }
 
 .foods [class*="food-li-"] img{
@@ -272,7 +278,7 @@ section{
   border-radius: 20px 20px 0 0;
 }
 
-.foods .food-list:first-child{
+.foods .food-list li:first-child{
   margin-top: 200px;
 }
 
@@ -283,7 +289,7 @@ section{
 }
 
 .food-text{
-  padding:10px 10px;
+  padding:20px 15px;
 }
 
 .food-text *{

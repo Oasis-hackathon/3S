@@ -101,9 +101,11 @@
             </div>
             <ul class="food-list ">
                 <% for(var item of cdata.foods){ %>
-                    <a href="<%= item.href %>">
                         <li class="food-li-<%=item.engName%>">
-                            <img src="<%= item.img %>" alt="<% item.name %>">
+                            <a href="<%= item.href %>">
+                            <div class="food-img">
+                                <img src="<%= item.img %>" alt="<% item.name %>">
+                            </div>
                             <div class="food-text">
                                 <% if(item.name ==="준비중"){%>
                                     <h3><%= item.name %></h3>
@@ -112,10 +114,11 @@
                                         <%= item.name %>의 소비기한을 알아보고<br> 지구 지키기에 동참하세요🌏
                                     </h3>
                                 <%}%>
-                                <p class="food-desc"><%= item.desc %></p>
+                                <p class="food-desc">소비기한, 보관방법,  </p>
                             </div>
+                            </a>
                         </li>
-                    </a>
+                   
                 <% } %>
             </ul>
         </div>
