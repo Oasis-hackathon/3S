@@ -5,23 +5,27 @@ export const home = (req, res) => {
 
 export const calfoodprint = (req, res) => res.render("calfoodprint");
 export const explain = (req, res) => res.render("explain");
-export const foodsearch = (req, res) => {
 
-    var {
-        query:{food :searching}
+
+export const foodsearch = async (req, res) => {
+    const {
+        query:{ food :searching }
     } = req;
-/*
-    for (var item of foodJson.foods){
-        console.log(`${item.name} ${searching}`);
-        if(item.name === searching){
-            const result = item;
-            console.log(`${item.name} ${searching} result: ${result}`);
-        }
-
+    let foods = [];
+        
+    try{
+        foods = await foodJson.foods.find(food => food.name === searching) || {};
+        console.log(`length : ${Object.keys(foods).length}` );
+        console.log(foods);
+    } catch(error){
+        console.log(`length : ${Object.keys(foods).length}` );
+        console.log("error");
     }
-*/
+
+    res.render('search',{ searching, foods });
+
     
-    res.render('search',{searching });
+    
 };
 
 

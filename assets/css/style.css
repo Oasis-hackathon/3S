@@ -20,6 +20,10 @@ p {
   margin: 0 auto;
 }
 
+section{
+  padding:100px 0 0 0;
+}
+
 /* Wrap */
 .wrap {
   display: flex;
@@ -235,6 +239,10 @@ p {
   background-color: #F4F5F7;
 }
 
+.foods .inner{
+  padding: 80px 5%;
+}
+
 
 .foods .container{
   display:flex;
@@ -264,7 +272,7 @@ p {
   border-radius: 20px 20px 0 0;
 }
 
-.foods .food-li-cheese{
+.foods .food-list:first-child{
   margin-top: 200px;
 }
 
@@ -305,15 +313,19 @@ p {
   
   .foods .section-text {
     top: -35px;
-}
+  }
 
-.food-li-cheese{
+  .food-list:first-child{
     margin-top:50px;
-}
+  }
 
 }
 
 @media screen and (max-width: 768px) {
+
+  section{
+    padding:65px;
+  }
   .visual {
     padding-top: 65px;
   }

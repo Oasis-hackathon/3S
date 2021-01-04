@@ -76,11 +76,11 @@
                         </p>
                         <div id="explain-detail">
                             <div class="explain-detail">
-                                <strong>56 / </strong>
+                                <strong>56 % </strong>
                                 <!--<p>유통기한을 식품 폐기 시점으로 인식하는 소비자의 비율, 56%</p>-->
                             </div>
                             <div class="explain-detail">
-                                <strong>/ 130,000,000,000</strong>
+                                <strong> 1조3000억원</strong>
                                 <!--<p>연간 유통기한 경과 가공식품 폐기 비용, 1조 3000억</p>-->
                             </div>
                         </div>
@@ -91,32 +91,34 @@
 ​
 <div class="foods">
     <div class="container">
-        <div class="section-text">
-            <h3 class="section-title">
-                음식들의 <br>
-                소비기한 알아보기
-            </h3>
-            <p class="section-desc">각 음식별 보관방법과 활용 방법을 확인하세요!</p>
+        <div class="inner">
+            <div class="section-text">
+                <h3 class="section-title">
+                    음식들의 <br>
+                    소비기한 알아보기
+                </h3>
+                <p class="section-desc">각 음식별 보관방법과 활용 방법을 확인하세요!</p>
+            </div>
+            <ul class="food-list ">
+                <% for(var item of cdata.foods){ %>
+                    <a href="<%= item.href %>">
+                        <li class="food-li-<%=item.engName%>">
+                            <img src="<%= item.img %>" alt="<% item.name %>">
+                            <div class="food-text">
+                                <% if(item.name ==="준비중"){%>
+                                    <h3><%= item.name %></h3>
+                                <%} else{%>
+                                    <h3 class="food-title">
+                                        <%= item.name %>의 소비기한을 알아보고<br> 지구 지키기에 동참하세요🌏
+                                    </h3>
+                                <%}%>
+                                <p class="food-desc"><%= item.desc %></p>
+                            </div>
+                        </li>
+                    </a>
+                <% } %>
+            </ul>
         </div>
-        <ul class="food-list ">
-            <% for(var item of cdata.foods){ %>
-                <a href="<%= item.href %>">
-                    <li class="food-li-<%=item.engName%>">
-                        <img src="<%= item.img %>" alt="<% item.name %>">
-                        <div class="food-text">
-                            <% if(item.name ==="준비중"){%>
-                                <h3><%= item.name %></h3>
-                            <%} else{%>
-                                <h3 class="food-title">
-                                    <%= item.name %>의 소비기한을 알아보고<br> 지구 지키기에 동참하세요🌏
-                                </h3>
-                            <%}%>
-                            <p class="food-desc"><%= item.desc %></p>
-                        </div>
-                    </li>
-                </a>
-            <% } %>
-        </ul>
     </div>
 </div>
 </div>

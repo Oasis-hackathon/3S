@@ -1,13 +1,38 @@
 <%- include ('./head') %>
-<link rel="stylesheet" href="css/search.css">
+<link rel="stylesheet" href="css/pages/search.css">
 
 <body>
     <%- include ('./header') %>
     <div class="wrap">
-        <div class="foodsearch">
-            <h1>서치결과<%-searching%></h1>
-            <!-- 서치결과 보여주고 링크 걸어주기-->
+        <div class="foods foodsearch">
+            <h1>검색결과<%-searching%></h1>
+            <p><% if(Object.keys(foods).length === {} || Object.keys(foods).length === 0){%></p>
+                <h5>No Search foods   🤢 <br>
+                    더 많은 음식들은 준비중입니다.    
+                </h5>
+            <%} else {%>
+                <a href="<%= foods.href %>">
+                    <li class="food-li-<%=foods.engName%>">
+                        <div class="food-img">
+                            <img src="<%= foods.img %>" alt="<% foods.name %>">
+                        </div>
+                        <div class="food-text">
+                                <h3 class="food-title">
+                                    <%= foods.name %>의 소비기한을 알아보고<br> 지구 지키기에 동참하세요🌏
+                                </h3>
+    
+                            <p class="food-desc"><%= foods.desc %></p>
+                        </div>
+                    </li>
+                </a>
+                <!-- 서치결과 보여주고 링크 걸어주기-->
+            <% }%>
+            
+            
         </div>
     </div>
 </body>
+<script>
+    
+</script>
 <%- include ('./tail') %>

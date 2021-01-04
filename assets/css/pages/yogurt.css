@@ -260,17 +260,12 @@
     background: #fff;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
   }
-  
-  
-  @media screen and (max-width: 1400px) {
-    .recipe_yogurt .page_yogurt {
-      display: none;
-    }
-    .recycling_yogurt .page_yogurt {
-      display: none;
-    }
-  }
+
+
   @media screen and (max-width: 1000px) {
+    .main_yogurt{
+      display:none;
+    }
     .recycling_yogurt .recycling_items_yogurt .recycling_item_yogurt {
       height: 800px;
       width: 500px;
@@ -284,3 +279,14 @@
       text-align: center;
     }
   }
+  
+  
+  @media screen and (max-width: 1400px) {
+    .recipe_yogurt .page_yogurt {
+      display: none;
+    }
+    .recycling_yogurt .page_yogurt {
+      display: none;
+    }
+  }
+ 
