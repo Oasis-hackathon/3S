@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 /* yogurt */
 .wrap_yogurt {
   display: flex;
@@ -38,7 +42,7 @@
 }
 .visual_yogurt .dates_yogurt p {
   display: inline-block;
-  font-size: 12px;
+  font-size: 17px;
   text-align: left;
 }
 
@@ -184,7 +188,7 @@
   .recycling_item1_yogurt
   .menu_title
   h3 {
-  margin: 30px 100px 0px 60px;
+  margin: 30px 200px 0px 30px;
   font-size: 40px;
 }
 .recycling_yogurt
@@ -192,7 +196,7 @@
   .recycling_item1_yogurt
   .menu_title
   h4 {
-  margin: 5px 60px 20px 60px;
+  margin: 5px 60px 20px 30px;
   font-size: 25px;
 }
 .recycling_yogurt .recycling_items_yogurt .recycling_item2_yogurt .menu_title {
@@ -215,7 +219,7 @@
   .recycling_item2_yogurt
   .menu_title
   h3 {
-  margin: 30px 100px 0px 60px;
+  margin: 30px 100px 0px 30px;
   font-size: 40px;
 }
 .recycling_yogurt
@@ -223,7 +227,7 @@
   .recycling_item2_yogurt
   .menu_title
   h4 {
-  margin: 5px 60px 40px 60px;
+  margin: 5px 60px 40px 30px;
   font-size: 25px;
 }
 
@@ -233,7 +237,7 @@
   line-height: 2;
 }
 .recycling_yogurt .recycling_items_yogurt .recycling_item2_yogurt p {
-  margin: 10px 40px 0px 60px;
+  margin: 10px 40px 0px 30px;
   font-size: 21px;
   line-height: 2;
 }
@@ -268,24 +272,15 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .recipe_yogurt .page_yogurt {
-    display: none;
-  }
-  .recycling_yogurt .page_yogurt {
+  .page_yogurt {
     display: none;
   }
 }
-@media screen and (max-width: 1000px) {
-  .recycling_yogurt .recycling_items_yogurt .recycling_item_yogurt {
-    height: 800px;
-    width: 500px;
+@media screen and (max-width: 1500px) {
+  * {
+    display: none;
   }
-  .recycling_yogurt .recycling_items_yogurt {
-    margin-left: 0px;
-    justify-content: center;
-  }
-  .recycling_yogurt .recycling_title_yogurt {
-    margin: 0px 0px 40px 0px;
-    text-align: center;
+  * {
+    해당 페이지는 확대 및 축소가 되지 않습니다.
   }
 }
