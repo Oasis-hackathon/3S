@@ -333,7 +333,33 @@ body {
   * {
     display: none;
   }
-  * {
-    해당 페이지는 확대 및 축소가 되지 않습니다. 제발,,
+
+
+  @media screen and (max-width: 1000px) {
+    .main_yogurt{
+      display:none;
+    }
+    .recycling_yogurt .recycling_items_yogurt .recycling_item_yogurt {
+      height: 800px;
+      width: 500px;
+    }
+    .recycling_yogurt .recycling_items_yogurt {
+      margin-left: 0px;
+      justify-content: center;
+    }
+    .recycling_yogurt .recycling_title_yogurt {
+      margin: 0px 0px 40px 0px;
+      text-align: center;
+    }
   }
-}
+  
+  
+  @media screen and (max-width: 1400px) {
+    .recipe_yogurt .page_yogurt {
+      display: none;
+    }
+    .recycling_yogurt .page_yogurt {
+      display: none;
+    }
+  }
+ 

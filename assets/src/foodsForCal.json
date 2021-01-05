@@ -1,0 +1,56 @@
+{
+    "foodsForCal":
+    [ 
+        {
+            "name" : "두부",
+            "engName": "dubu",
+            "usebydate" : "45"
+            
+        },
+        {
+            "name" : "달걀",
+            "engName": "egg",
+            "usebydate" : "25"
+        },
+        {
+            "name" : "우유",
+            "engName": "milk",
+            "usebydate" : "45"
+        },
+        {
+            "name" : "요거트",
+            "engName": "yogurt",
+            "usebydate" : "10"
+        },
+        {
+            "name":"식빵",
+            "engName": "bread",
+            "usebydate": "18"
+        },
+        {
+            "name":"김치",
+            "engName": "kimchi",
+            "usebydate": "180"
+        },
+        {
+            "name":"라면",
+            "engName": "ramen",
+            "usebydate": "240"
+        },
+        {
+            "name":"냉동만두",
+            "engName": "dumpling",
+            "usebydate": "25"
+        },
+        {
+            "name":"액상커피",
+            "engName": "coffee",
+            "usebydate": "30"
+        },
+        {
+            "name":"크림빵",
+            "engName": "bread",
+            "usebydate": "2"
+        }
+    ]
+}

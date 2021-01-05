@@ -345,6 +345,15 @@ section{
   color:var(--gray)
 }
 
+/* Calculate */
+.calculate{
+  text-align: center;
+}
+
+
+
+/* Media query */
+
 @media screen and (max-width: 400px) {
   .visual .visual-bg {
     padding: 100px 20px;
