@@ -1,9 +1,51 @@
 const foodJson = require("../assets/src/foods.json");
+const calFoodJson = require("../assets/src/foodsForCal.json");
 export const home = (req, res) => {
     res.render('home');
 }
 
-export const calfoodprint = (req, res) => res.render("calfoodprint");
+export const calfoodprint = (req, res) =>{
+    const {
+        query: { expiration,foodname } 
+    } = req ; 
+
+
+    //url에서 받아온 유통기한을 날짜로 변환
+    const parseDate = (str) =>{
+        let y = str.substr(0, 4);
+        let m = str.substr(4, 2);
+        let d = str.substr(6, 2);
+        return new Date(y,m-1,d);
+    }
+
+    //소비기한 더해주기 
+    const str = expiration;
+    let date = parseDate(str);
+
+    console.log(`date : ${date}`);
+
+    const now = new Date();
+    const dday  = date; //d-day 9월29일(유통기한 + 소비기한)
+
+    const value = now - dday;
+
+    let diffDays = Math.floor((dday.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)) ;
+    diffDays  = diffDays > 0 ? diffDays : 0 ;
+    console.log(`소비기한까지 ${diffDays < 10 ? `0${diffDays}` : diffDays}일 남았습니다.`);
+
+    
+
+    try{
+       
+
+
+    }catch(error){
+        console.log("error");
+    }
+    
+
+    res.render("calfoodprint",{ expiration , foodname, diffDays } );
+}
 export const explain = (req, res) => res.render("explain");
 
 
