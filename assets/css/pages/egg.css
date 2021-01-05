@@ -32,8 +32,7 @@ body {
   margin-top: 120px;
   right: 65%;
   z-index: 1;
-  color: rgb(240, 156, 100);
-  text-shadow: 0 0 10px #f4f5f7;
+  color:#fff;
 }
 .visual_egg .explain_egg p {
   font-style: oblique;
@@ -352,11 +351,4 @@ body {
     display: none;
   }
 }
-/*@media screen and (max-width: 1500px) {
-  * {
-    display: none;
-  }
-  * {
-    해당 페이지는 확대 및 축소가 되지 않습니다. 제발,,
-  }
-}
+

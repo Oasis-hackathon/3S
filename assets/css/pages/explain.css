@@ -45,20 +45,17 @@
     transition: 0.5s;
   }
   .meaning_introduce .dates .sellbydate .click:hover {
-    cursor: pointer;
   }
   .meaning_introduce .dates .usebydate:hover {
     height: 700px;
     width: 350px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
     transition: 0.5s;
   }
   .meaning_introduce .dates .bestbydate:hover {
     height: 700px;
     width: 350px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
     transition: 0.5s;
   }
   .meaning_introduce .dates div{

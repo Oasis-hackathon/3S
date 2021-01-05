@@ -33,7 +33,6 @@ body {
   right: 65%;
   z-index: 1;
   color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px #ccbb5d;
 }
 .visual_milk .explain_milk p {
   font-style: oblique;

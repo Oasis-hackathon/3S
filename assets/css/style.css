@@ -7,12 +7,16 @@ button {
   border-radius: 5px;
 }
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  /*font-family: "Noto Sans KR", sans-serif;*/
+  font-family: 'NanumSquare', sans-serif;
+  line-height: 1.7;
   color: #2b292d;
+  letter-spacing: -0.5px;
 }
 
 p {
   word-break: keep-all;
+
 }
 
 .layout {
@@ -20,9 +24,6 @@ p {
   margin: 0 auto;
 }
 
-section{
-  padding:100px 0 0 0;
-}
 
 /* Wrap */
 .wrap {
@@ -34,7 +35,7 @@ section{
 /* Visual */
 .visual {
   margin: 0;
-  padding: 0;
+  padding: 80px 0 0 0;
   width: 100vw;
 }
 .visual .section input[id*="slide"] {
@@ -59,10 +60,15 @@ section{
   display: block;
   position: relative;
 }
-.visual .section .slidelist > li > a img {
+.visual .section .slidelist > li > a img,
+.visual .slide-img {
   height: 500px;
   width: 100vw;
   object-fit: cover;
+}
+.visual .slide-img{
+  background: url(/image/slide.png) no-repeat center;
+  background-size: cover;
 }
 .visual .section .slidelist label {
   position: absolute;
@@ -73,40 +79,45 @@ section{
   opacity: 0;
 }
 .visual .section .slidelist .left {
-  left: 30px;
+  left: -10px;
   opacity: 1;
   background: url(/image/left.png) center center / 100% no-repeat;
 }
 .visual .section .slidelist .right {
-  right: 30px;
+  right: 0;
   opacity: 1;
   background: url(/image/right.png) center center / 100% no-repeat;
 }
-.visual .section .slidelist .textbox {
+.visual .section .textbox {
   position: absolute;
   z-index: 1;
-  top: 50%;
-  left: 40%;
+  top: 43%;
+  left: 37%;
   transform: translate(-50%, -50%);
-  line-height: 1.7;
+  line-height: 2;
   text-align: left;
+  margin-bottom: 30px;
 }
 
-.visual .section .slidelist .textbox h3 {
-  font-size: 34px;
+.visual .section .textbox h3 {
+  font-size: 3rem;
   color: #fff;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.5s;
 }
-.visual .section .slidelist .textbox p {
-  font-size: 26px;
+.visual .section .textbox p {
+  font-size:2.5rem;
   color: #fff;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.5s;
+  line-height: 2;
 }
-
+.visual .textbox img {
+  width: 5px;
+  height: 5px;
+}
 .visual .section input[id="slide01"]:checked ~ .slide-wrap .slidelist > li {
   transform: translateX(0%);
 }
@@ -184,11 +195,6 @@ section{
   transition-delay: 0.4s;
 }
 
-.visual .strong{
-  font-weight: bold;
-  
-}
-
 /* Explain */
 
 .explain {
@@ -238,8 +244,7 @@ section{
 }
 
 /* Ratio */
-.ratio {
-}
+
 .ratio .ratio_background {
   width: 100vw;
   height: 100%;
@@ -272,13 +277,10 @@ section{
   width:700px;
 }
 
-
 .ratio .ratio_background .section .section1 .section1_title {
-  
   text-align: right;
 }
-.ratio .ratio_background .section .section1 img {
-}
+
 .ratio .ratio_background .section .section1 h3,
 .ratio .ratio_background .section .section2 h3 {
   font-size: 30px;
@@ -286,12 +288,9 @@ section{
 }
 .ratio .ratio_background .section .section1 p,
 .ratio .ratio_background .section .section2 p {
-  font-size: 25px;
+  font-size: 18px;
   line-height: 2;
 }
-
-
-
 
 /* Foods */
 
@@ -327,6 +326,13 @@ section{
   /* margin: 10px 5%; */
   margin: 10px 2%;
   transform: translate(0);
+  transition: transform 0.5s,box-shadow 0.5s;
+}
+
+.foods [class*="food-li-"]:hover{
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  
 }
 
 .foods .food-img{
@@ -411,15 +417,21 @@ footer{
 /* Media query */
 
 @media screen and (max-width: 400px) {
+  .visual {
+    padding: 65px 0 0 0;
+  }
+
   .visual .visual-bg {
     padding: 100px 20px;
     height: 100vh;
     align-items: unset;
   }
+
   .visual .visual-txt {
     width: 500px;
     margin-right: 0;
   }
+
   .visual .visual-img {
     position: absolute;
     bottom: 15%;
@@ -427,6 +439,21 @@ footer{
     max-width: 200px;
   }
 
+  .visual .slide-img{
+    background: url(/image/green_withpic_small.png) no-repeat center;
+    background-size: cover;
+  }
+
+  .visual .section .slidelist .textbox h3 {
+    font-size: 1.3rem;
+  }
+  .visual .section .slidelist .textbox p {
+    font-size: 1.1rem;
+  }
+
+  .visual .section .textbox{
+    top:30%;
+  }
   
   .foods .section-text {
     top: -35px;
@@ -474,28 +501,43 @@ footer{
   section{
     padding:65px 10px;
   }
+
   .visual {
     padding-top: 20px;
   }
-  .visual-txt {
-    font-size: small;
+
+  .visual .section .textbox h3 {
+    font-size: 2rem;
+
+  }
+  .visual .section .textbox p {
+    font-size:1.8rem;
   }
 
   .ratio .trash-title::after{
     height: 215px;
   }
+
+  .ratio .ratio_background .section .section1 img{
+    width:90%;
+  }
   
 }
-@media screen and (max-width: 980px){
-  .foods .food-li-yogurt{
-    margin-top:10px;
-  }
-}
+
 
 @media screen and (max-width: 980px){
+  .visual .section .slidelist .textbox{
+    left:50%;
+  }
+
   .foods [class*="food-li-"]{
       max-width: 500px;
   }
+
+  .foods .food-li-yogurt{
+    margin-top:10px;
+  }
+
   .ratio .trash-title::after {
     background-size: contain;
   }

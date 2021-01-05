@@ -1,9 +1,9 @@
 <%- include ('./head') %>
-​
+ 
 <body>
     <%- include ('./header') %>
     <div class="wrap">
-​
+ 
         <!--visual(slide)-->
         <div class="visual">
             <div class="section">
@@ -18,12 +18,11 @@
                                 <div class="textbox">
                                     <h3>잠깐! 냉장고 정리 하시나요?</h3>
                                     <p>'유통기한'과 '소비기한'의 차이점을 아시나요?<br>
-                                    </p>
-                                    <p>
-                                        <span class="strong">소비기한</span>을 알아보고 지구 지키기에 동참하세요🌏
+
                                     </p>
                                 </div>
-                                <img src="image/green_withpic.png">
+                                <div class="slide-img">
+                                </div>
                                 <label for="slide02" class="right"></label>
                             </a>
                         </li>
@@ -32,9 +31,9 @@
                                 <label for="slide01" class="left"></label>
                                 <div class="textbox">
                                     <h3>제품에 달린 'QR'을 찍어보세요!</h3>
-                                    <p>무심코 버리려던 음식들을 재탄생 시켜줍니다!</p>
-                                </div>
-                                <img src="image/green_withpic.png">
+                                    <p>우측 슬라이드의 'QR'로 소비기간을 확인하세요!<br>
+                                    </div>
+                                <img src="image/violet_withpic.png">
                                 <label for="slide03" class="right"></label>
                             </a>
                         </li>
@@ -42,10 +41,8 @@
                             <a>
                                 <label for="slide02" class="left"></label>
                                 <div class="textbox">
-                                    <h3>????</h3>
-                                    <p>~~~~~~~</p>
                                 </div>
-                                <img src="image/green_withpic.png">
+                                <img src="image/blue_withpic.png">
                                 <label for="slide01" class="right"></label>
                             </a>
                         </li>
@@ -53,6 +50,7 @@
                 </div>
             </div>
         </div>
+ 
 ​
         <!--explain(미완성)-->
         <div class="explain">
@@ -132,7 +130,7 @@
                     음식들의 <br>
                     소비기한 알아보기
                 </h3>
-                <p class="section-desc">각 음식별 보관방법과 활용 방법을 확인하세요!</p>
+                <p class="section-desc">각 음식별 올바른 보관방법과 소비기한을 알아보고 재료를 활용할 수 있는 다양한 방법을 알아보세요!</p>
             </div>
             <ul class="food-list">
                 <% for(var item of cdata.foods){ %>
