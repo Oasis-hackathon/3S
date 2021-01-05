@@ -18,9 +18,6 @@ export const calfoodprint = async (req, res) =>{
         let d = str.substr(6, 2);
         return new Date(y,m-1,d);
     }
-   
-    
-  
 
 
     //소비기한 더해주기 
@@ -37,18 +34,7 @@ export const calfoodprint = async (req, res) =>{
     let diffDays = Math.floor((dday.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)) ;
 
     diffDays  = diffDays > 0 ? diffDays : 0 ;
-  
-
     console.log(`소비기한까지 ${diffDays < 10 ? `0${diffDays+1}` : diffDays+1}일 남았습니다.`);
-
-  
-
-    try{
-       
-
-    }catch(error){
-        console.log("error");
-    }
     
     res.render("calfoodprint",{ expiration , foodname, diffDays ,usebydate } );
   
