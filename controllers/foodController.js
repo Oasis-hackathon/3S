@@ -39,7 +39,7 @@ export const calfoodprint = async (req, res) =>{
     diffDays  = diffDays > 0 ? diffDays : 0 ;
   
 
-    console.log(`소비기한까지 ${diffDays < 10 ? `0${diffDays}` : diffDays}일 남았습니다.`);
+    console.log(`소비기한까지 ${diffDays < 10 ? `0${diffDays+1}` : diffDays+1}일 남았습니다.`);
 
   
 
