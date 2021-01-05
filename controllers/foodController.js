@@ -23,8 +23,6 @@ export const foodsearch = async (req, res) => {
     }
 
     res.render('search',{ searching, foods });
-
-    
     
 };
 
