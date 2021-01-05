@@ -328,6 +328,7 @@ section{
   margin-top: 200px;
 }
 
+
 .foods .food-li:last-child::after{
   content: '';
   display: block;
@@ -338,6 +339,7 @@ section{
   margin-top: -450px;
 }
 
+
 .food-text{
   padding:20px 15px;
 }
@@ -347,6 +349,9 @@ section{
 }
 .food-desc{
   color:var(--gray)
+}
+#search .foods .food-li-yogurt{
+  margin-top: 10px;
 }
 
 /* Calculate */
