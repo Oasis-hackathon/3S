@@ -20,6 +20,10 @@ p {
   margin: 0 auto;
 }
 
+section{
+  padding:100px 0 0 0;
+}
+
 /* Wrap */
 .wrap {
   display: flex;
@@ -81,7 +85,7 @@ p {
 .visual .section .slidelist .textbox {
   position: absolute;
   z-index: 1;
-  top: 65%;
+  top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
   line-height: 1.7;
@@ -183,7 +187,7 @@ p {
 /* Explain */
 
 .explain {
-  padding: 80px 0;
+  padding-top: 80px;
 }
 
 .explain .col-12 {
@@ -228,11 +232,61 @@ p {
   color: #fff;
 }
 
+/* Ratio */
+
+.ratio{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.ratio li{
+  margin-bottom:25px;
+  padding:20px 15px 0
+}
+.ratio .ratio-title, .trash-title{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ratio .ratio-desc{
+  font-size:70px;
+  color:#847deb;
+}
+
+.ratio .trash-title::after {
+  display: inline-block;
+  margin-top: 10px;
+  content: " ";
+  width:100%;
+  height: 350px;
+  background-image: url(/image/ratio2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ratio .ratio-desc::after{
+  display:inline-block;
+  margin-top:10px;
+  content:" ";
+  width:350px;
+  height: 300px;
+  background-image: url(/image/ratio.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+
 /* Foods */
 
 .foods{
   padding:100px 0;
   background-color: #F4F5F7;
+}
+
+.foods .inner{
+  padding: 80px 5%;
 }
 
 
@@ -248,15 +302,21 @@ p {
   left: 50px;
 }
 
-.foods [class*="food-li-"]{
+.foods [class*="food-li-"] {
   float: left;
-  max-width: 300px;
-  width:100%;
+  max-width: 35.5%;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
-  margin:10px 5%;
+  /* margin: 10px 5%; */
+  margin: 10px 2%;
   transform: translate(0);
+}
+
+.foods .food-img{
+  height: 450px;
+  overflow: hidden;
 }
 
 .foods [class*="food-li-"] img{
@@ -264,7 +324,7 @@ p {
   border-radius: 20px 20px 0 0;
 }
 
-.foods .food-li-cheese{
+.foods .food-list li:first-child{
   margin-top: 200px;
 }
 
@@ -275,7 +335,7 @@ p {
 }
 
 .food-text{
-  padding:10px 10px;
+  padding:20px 15px;
 }
 
 .food-text *{
@@ -305,25 +365,72 @@ p {
   
   .foods .section-text {
     top: -35px;
-}
+  }
 
-.food-li-cheese{
+  .food-list:first-child{
     margin-top:50px;
-}
+  }
+
+  .ratio{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .ratio li{
+    margin-bottom:25px;
+    padding:20px 15px 0
+  }
+  .ratio .ratio-title, .trash-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .ratio .ratio-desc{
+    font-size:70px;
+    color:#847deb;
+  }
+  
+  .ratio .trash-title::after{
+    background-size: contain;
+    height: 150px;
+
+  }
+  .ratio .ratio-desc::after{
+    width:100%;
+    height: 300px;
+  }
+  
 
 }
 
 @media screen and (max-width: 768px) {
+
+  section{
+    padding:65px;
+  }
   .visual {
     padding-top: 65px;
   }
   .visual-txt {
     font-size: small;
   }
+
+  .ratio .trash-title::after{
+    height: 215px;
+  }
+  
 }
 
 @media screen and (max-width: 980px){
   .foods [class*="food-li-"]{
       max-width: 500px;
+  }
+  .ratio .trash-title::after {
+
+
+
+    background-size: contain;
+
   }
 }

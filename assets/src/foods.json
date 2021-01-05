@@ -1,46 +1,45 @@
 {
     "foods":
     [
-        {
-            "name" : "치즈",
-            "engName": "cheese",
-            "img" : "/image/cheese.png",
-            "desc" : "각 음식에 대한 짧은 설명이 들어갑니다.",
-            "href" : "/foods/cheese"
-        },
+        
         {
             "name" : "두부",
             "engName": "dubu",
             "img" : "/image/dubu.png",
             "desc" : "각 음식에 대한 짧은 설명이 들어갑니다 여기는 두부 설명.",
-            "href" : "/foods/dubu"
+            "href" : "/foods/dubu",
+            "usebydate" : "+90일 "
+            
         },
         {
             "name" : "달걀",
             "engName": "egg",
             "img" : "/image/egg.png",
             "desc" : "각 음식에 대한 짧은 설명이 들어갑니다.",
-            "href" : "/foods/egg"
+            "href" : "/foods/egg",
+            "usebydate" : "+25일 "
         },
         {
             "name" : "우유",
             "engName": "milk",
             "img" : "/image/milk.png",
             "desc" : "각 음식에 대한 짧은 설명이 들어갑니다 우유에 대한설명이 들어갑니다.",
-            "href" : "/foods/milk"
+            "href" : "/foods/milk",
+            "usebydate" : "+45일"
         },
         {
             "name" : "요거트",
             "engName": "yogurt",
             "img" : "/image/yogurt.png",
             "desc" : "각 음식에 대한 짧은 설명이 들어갑니다 요거트에 대한설명이 들어갑니다.",
-            "href" : "/foods/yogurt"
+            "href" : "/foods/yogurt",
+            "usebydate" : "+10일 "
         },
         {
             "name" : "준비중",
             "img" : "/image/준비중.png",
-            "desc" : "더 많은 음식들은 준비중입니다!식품의약품안전처는 2023년부터 유통기한 대신 '소비기한'도입을 추진하고 있습니다. 식품보관 기간만 준수한다면, 음식들을 소비기한까찌 더 오래 신선하게 보관가능합니다! 통조림 햄, 식빵 등 더 다양한 음식들은 준비중입니다.🥛🥐🍖🍧🍞🍫🍦🥓",
-            "href" : "#"
+            "desc" : "더 많은 음식들은 준비중입니다! 식품보관 기간만 준수한다면, 음식들을 소비기한까찌 더 오래 신선하게 보관가능합니다! 통조림 햄, 식빵 등 더 다양한 음식들은 준비중입니다.🥛🥐🍖🍧🍞🍫🍦🥓",
+            "href" : "none"
         }
     ]
 }

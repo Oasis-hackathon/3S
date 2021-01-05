@@ -2,8 +2,8 @@ body {
   overflow-x: hidden;
 }
 
-/* egg */
-.wrap_egg {
+/* milk */
+.wrap_milk {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -14,51 +14,51 @@ body {
 }
 
 
-/* egg_visual */
-.background_egg{
+/* milk_visual */
+.background_milk{
   display: absolute;
   width: 100vw;
   height: 600px;
-  background-image: url(/image/foods/egg_full.jpg);
+  background-image: url(/image/foods/milk_full.jpg);
   background-size: cover;
   opacity: 0.8;
 }
 
-.visual_text_egg {
+.visual_text_milk {
   opacity: 1;
 }
-.visual_egg .visual_text_egg .explain_egg {
+.visual_milk .visual_text_milk .explain_milk {
   position: absolute;
   margin-top: 120px;
   right: 65%;
   z-index: 1;
-  color: rgb(240, 156, 100);
-  text-shadow: 0 0 10px #f4f5f7;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #ccbb5d;
 }
-.visual_egg .explain_egg p {
+.visual_milk .explain_milk p {
   font-style: oblique;
 }
-.visual_egg .explain_egg h2 {
+.visual_milk .explain_milk h2 {
   font-size: 60px;
 }
-.visual_egg .explain_egg h3 {
+.visual_milk .explain_milk h3 {
   font-size: 30px;
 }
-.visual_egg .dates_egg {
+.visual_milk .dates_milk {
   position: absolute;
   top: 170%;
   white-space: nowrap;
 }
-.visual_egg .dates_egg h4 {
+.visual_milk .dates_milk h4 {
   font-size: 55px;
   top: 50%;
 }
-.visual_egg .dates_egg p {
+.visual_milk .dates_milk p {
   font-size: 17px;
   text-align: left;
 }
 
-.visual_egg .main_egg img {
+.visual_milk .main_milk img {
   position: absolute;
   margin-top: 120px;
   left: 65%;
@@ -70,28 +70,28 @@ body {
   box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* egg_storage */
-.storage_egg {
+/* milk_storage */
+.storage_milk {
   position: relative;
   margin: 70px 0px 70px 0px;
 }
-.storage_egg .storage_title_egg {
+.storage_milk .storage_title_milk {
   margin: 0px 0px 40px 0px;
   text-align: center;
   line-height: 2;
 }
-.storage_egg .storage_title_egg h3 {
+.storage_milk .storage_title_milk h3 {
   font-size: 40px;
 }
-.storage_egg .storage_title_egg p {
+.storage_milk .storage_title_milk p {
   font-size: 15px;
 }
-.storage_egg .storage {
+.storage_milk .storage {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.storage_main_egg {
+.storage_main_milk {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -103,11 +103,11 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.storage_main_egg div{
+.storage_main_milk div{
   margin: 45px 60px 40px 60px;
   font-size: 30px;
 }
-.storage_main_egg P {
+.storage_main_milk P {
   margin-left: 60px;
   font-size: 23px;
   line-height: 2;
@@ -117,31 +117,31 @@ body {
 
 
 
-/* egg_recipe */
+/* milk_recipe */
 
-.recipe_egg {
+.recipe_milk {
   position: relative;
   margin: 70px 0px 70px 0px;
 }
-.recipe_egg .recipe_title_egg {
+.recipe_milk .recipe_title_milk {
   margin: 0px 0px 40px 0px;
   text-align: center;
   line-height: 2;
 }
-.recipe_egg .recipe_title_egg h3 {
+.recipe_milk .recipe_title_milk h3 {
   font-size: 40px;
 }
-.recipe_egg .recipe_title_egg p {
+.recipe_milk .recipe_title_milk p {
   font-size: 15px;
   color: rgb(116, 116, 116);
 }
-.recipe_egg .recipe_items_egg {
+.recipe_milk .recipe_items_milk {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.recipe_egg .recipe_items_egg .recipe_item1_egg {
+.recipe_milk .recipe_items_milk .recipe_item1_milk {
   width: 550px;
   height: 660px;
   margin: 30px 30px 0px 30px;
@@ -149,7 +149,7 @@ body {
   background: #fff;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
-.recipe_egg .recipe_items_egg .recipe_item2_egg {
+.recipe_milk .recipe_items_milk .recipe_item2_milk {
   width: 550px;
   height: 500px;
   margin: 30px;
@@ -157,67 +157,67 @@ body {
   background: #fff;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
-.recipe_egg .recipe_items_egg p {
+.recipe_milk .recipe_items_milk p {
   margin: 30px 50px 50px 50px;
   line-height: 2;
   font-size: 20px;
 }
-.recipe_egg .recipe_items_egg .menu_title {
+.recipe_milk .recipe_items_milk .menu_title {
   display: flex;
   margin: 20px 20px 0 20px;
 }
-.recipe_egg .recipe_items_egg .menu_name h3 {
+.recipe_milk .recipe_items_milk .menu_name h3 {
   margin: 30px 10px 10px 10px;
   font-size: 36px;
 }
-.recipe_egg .recipe_items_egg .menu_name p {
+.recipe_milk .recipe_items_milk .menu_name p {
   margin: 30px 10px 10px 10px;
   line-height: 2;
   font-size: 18px;
 }
 
-.recipe_egg .recipe_items_egg .recipe_item1_egg .menu_title img {
+.recipe_milk .recipe_items_milk .recipe_item1_milk .menu_title img {
   margin: 20px 20px 0px 10px;
   width: 170px;
   height: 170px;
 }
-.recipe_egg .recipe_items_egg .recipe_item2_egg .menu_title img {
+.recipe_milk .recipe_items_milk .recipe_item2_milk .menu_title img {
   margin: 10px;
   width: 180px;
   height: 180px;
 }
-.recipe_egg .recipe_items_egg .recipe_item2_egg .menu_name {
+.recipe_milk .recipe_items_milk .recipe_item2_milk .menu_name {
   margin: 0px 0px 0px 30px;
 }
 
-/* egg_recycling */
-.recycling_egg {
+/* milk_recycling */
+.recycling_milk {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-self: right;
   margin: 0px 140px 70px 140px;
 }
-.recycling_egg .recycling_title_egg {
+.recycling_milk .recycling_title_milk {
   margin-right: 60px;
   margin-bottom: 30px;
   text-align: right;
   line-height: 2;
 }
-.recycling_egg .recycling_title_egg h3 {
+.recycling_milk .recycling_title_milk h3 {
   font-size: 40px;
 }
-.recycling_egg .recycling_title_egg p {
+.recycling_milk .recycling_title_milk p {
   font-size: 15px;
   color: rgb(116, 116, 116);
 }
-.recycling_egg .recycling_items_egg {
+.recycling_milk .recycling_items_milk {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: right;
 }
-.recycling_egg .recycling_items_egg .recycling_item1_egg {
+.recycling_milk .recycling_items_milk .recycling_item1_milk {
   height: 450px;
   width: 800px;
   margin: 40px;
@@ -226,79 +226,79 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-left: 400px;
 }
-.recycling_egg .recycling_items_egg .recycling_item1_egg .menu_title {
+.recycling_milk .recycling_items_milk .recycling_item1_milk .menu_title {
   display: flex;
   margin: 30px;
   margin-bottom: 50px;
   flex-direction: row;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item1_egg
+.recycling_milk
+  .recycling_items_milk
+  .recycling_item1_milk
   .menu_title
   img {
   height: 200px;
   width: auto;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item1_egg
+.recycling_milk
+  .recycling_items_milk
+  .recycling_item1_milk
   .menu_title
   h3 {
   margin: 30px 200px 0px 30px;
   font-size: 40px;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item1_egg
+.recycling_milk
+  .recycling_items_milk
+  .recycling_item1_milk
   .menu_title
   h4 {
   margin: 5px 60px 20px 30px;
   font-size: 25px;
 }
-.recycling_egg .recycling_items_egg .recycling_item2_egg .menu_title {
+.recycling_milk .recycling_items_milk .recycling_item2_milk .menu_title {
   display: flex;
   margin: 30px;
   margin-bottom: 50px;
   flex-direction: row;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item2_egg
+.recycling_milk
+  .recycling_items_milk
+  .recycling_item2_milk
   .menu_title
   img {
   height: 200px;
   width: auto;
   margin: 40px 30px 40px 30px;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item2_egg
+.recycling_milk
+  .recycling_items_milk
+  .recycling_item2_milk
   .menu_title
   h3 {
   margin: 30px 100px 0px 30px;
   font-size: 40px;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item2_egg
+.recycling_milk
+  .recycling_items_milk
+  .recycling_item2_milk
   .menu_title
   h4 {
   margin: 5px 60px 40px 30px;
   font-size: 25px;
 }
 
-.recycling_egg .recycling_items_egg .recycling_item1_egg p {
+.recycling_milk .recycling_items_milk .recycling_item1_milk p {
   margin: 0px 40px 0px 60px;
   font-size: 21px;
   line-height: 2;
 }
-.recycling_egg .recycling_items_egg .recycling_item2_egg p {
+.recycling_milk .recycling_items_milk .recycling_item2_milk p {
   margin: 10px 40px 0px 30px;
   font-size: 21px;
   line-height: 2;
 }
-.recycling_egg .recycling_items_egg .recycling_item2_egg {
+.recycling_milk .recycling_items_milk .recycling_item2_milk {
   height: 350px;
   width: 1160px;
   margin: 40px;
@@ -308,39 +308,39 @@ body {
 }
 
 /* 배경 꾸미기 */
-.page_egg .page_egg1 {
+.page_milk .page_milk1 {
   position: absolute;
-  top: 2100px;
-  left: 850px;
+  top: 2000px;
+  left: 750px;
 }
-.page_egg .page_egg2 {
+.page_milk .page_milk2 {
   position: absolute;
   top: 1250px;
-  left: -40px;
+  left: -100px;
 }
-.page_egg .page_egg3 {
+.page_milk .page_milk3 {
   position: absolute;
-  top: 890px;
-  left: 970px;
+  top: 800px;
+  left: 1000px;
 }
-.page_egg .page_egg4 {
+.page_milk .page_milk4 {
   position: absolute;
   top: 2400px;
   left: 0px;
 }
-.page_egg .page_egg1 img {
+.page_milk .page_milk1 img {
   width: 400px;
   height: auto;
 }
-.page_egg .page_egg2 img {
+.page_milk .page_milk2 img {
   width: 350px;
   height: auto;
 }
-.page_egg .page_egg3 img {
+.page_milk .page_milk3 img {
   width: 300px;
   height: auto;
 }
-.page_egg .page_egg4 img {
+.page_milk .page_milk4 img {
   width: 500px;
   height: auto;
 }
@@ -348,7 +348,7 @@ body {
 
 
 @media screen and (max-width: 1400px) {
-  .page_egg {
+  .page_milk {
     display: none;
   }
 }

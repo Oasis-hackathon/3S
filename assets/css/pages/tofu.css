@@ -2,8 +2,8 @@ body {
   overflow-x: hidden;
 }
 
-/* egg */
-.wrap_egg {
+/* tofu */
+.wrap_tofu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -14,51 +14,51 @@ body {
 }
 
 
-/* egg_visual */
-.background_egg{
+/* tofu_visual */
+.background_tofu{
   display: absolute;
   width: 100vw;
   height: 600px;
-  background-image: url(/image/foods/egg_full.jpg);
+  background-image: url(/image/foods/tofu_full.jpg);
   background-size: cover;
   opacity: 0.8;
 }
 
-.visual_text_egg {
+.visual_text_tofu {
   opacity: 1;
 }
-.visual_egg .visual_text_egg .explain_egg {
+.visual_tofu .visual_text_tofu .explain_tofu {
   position: absolute;
   margin-top: 120px;
   right: 65%;
   z-index: 1;
-  color: rgb(240, 156, 100);
-  text-shadow: 0 0 10px #f4f5f7;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #ccbb5d;
 }
-.visual_egg .explain_egg p {
+.visual_tofu .explain_tofu p {
   font-style: oblique;
 }
-.visual_egg .explain_egg h2 {
+.visual_tofu .explain_tofu h2 {
   font-size: 60px;
 }
-.visual_egg .explain_egg h3 {
+.visual_tofu .explain_tofu h3 {
   font-size: 30px;
 }
-.visual_egg .dates_egg {
+.visual_tofu .dates_tofu {
   position: absolute;
   top: 170%;
   white-space: nowrap;
 }
-.visual_egg .dates_egg h4 {
+.visual_tofu .dates_tofu h4 {
   font-size: 55px;
   top: 50%;
 }
-.visual_egg .dates_egg p {
+.visual_tofu .dates_tofu p {
   font-size: 17px;
   text-align: left;
 }
 
-.visual_egg .main_egg img {
+.visual_tofu .main_tofu img {
   position: absolute;
   margin-top: 120px;
   left: 65%;
@@ -70,28 +70,28 @@ body {
   box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* egg_storage */
-.storage_egg {
+/* tofu_storage */
+.storage_tofu {
   position: relative;
   margin: 70px 0px 70px 0px;
 }
-.storage_egg .storage_title_egg {
+.storage_tofu .storage_title_tofu {
   margin: 0px 0px 40px 0px;
   text-align: center;
   line-height: 2;
 }
-.storage_egg .storage_title_egg h3 {
+.storage_tofu .storage_title_tofu h3 {
   font-size: 40px;
 }
-.storage_egg .storage_title_egg p {
+.storage_tofu .storage_title_tofu p {
   font-size: 15px;
 }
-.storage_egg .storage {
+.storage_tofu .storage {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.storage_main_egg {
+.storage_main_tofu {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -103,11 +103,11 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.storage_main_egg div{
+.storage_main_tofu div{
   margin: 45px 60px 40px 60px;
   font-size: 30px;
 }
-.storage_main_egg P {
+.storage_main_tofu P {
   margin-left: 60px;
   font-size: 23px;
   line-height: 2;
@@ -117,188 +117,185 @@ body {
 
 
 
-/* egg_recipe */
+/* tofu_recipe */
 
-.recipe_egg {
+.recipe_tofu {
   position: relative;
   margin: 70px 0px 70px 0px;
 }
-.recipe_egg .recipe_title_egg {
+.recipe_tofu .recipe_title_tofu {
   margin: 0px 0px 40px 0px;
   text-align: center;
   line-height: 2;
 }
-.recipe_egg .recipe_title_egg h3 {
+.recipe_tofu .recipe_title_tofu h3 {
   font-size: 40px;
 }
-.recipe_egg .recipe_title_egg p {
+.recipe_tofu .recipe_title_tofu p {
   font-size: 15px;
   color: rgb(116, 116, 116);
 }
-.recipe_egg .recipe_items_egg {
+.recipe_tofu .recipe_items_tofu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.recipe_egg .recipe_items_egg .recipe_item1_egg {
+.recipe_tofu .recipe_items_tofu .recipe_item1_tofu {
   width: 550px;
-  height: 660px;
-  margin: 30px 30px 0px 30px;
-  border-radius: 30px;
-  background: #fff;
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-}
-.recipe_egg .recipe_items_egg .recipe_item2_egg {
-  width: 550px;
-  height: 500px;
+  height: 480px;
   margin: 30px;
   border-radius: 30px;
   background: #fff;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
-.recipe_egg .recipe_items_egg p {
+.recipe_tofu .recipe_items_tofu .recipe_item2_tofu {
+  width: 550px;
+  height: 480px;
+  margin: 30px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.recipe_tofu .recipe_items_tofu p {
   margin: 30px 50px 50px 50px;
   line-height: 2;
   font-size: 20px;
 }
-.recipe_egg .recipe_items_egg .menu_title {
+.recipe_tofu .recipe_items_tofu .menu_title {
   display: flex;
   margin: 20px 20px 0 20px;
 }
-.recipe_egg .recipe_items_egg .menu_name h3 {
+.recipe_tofu .recipe_items_tofu .menu_name h3 {
   margin: 30px 10px 10px 10px;
   font-size: 36px;
 }
-.recipe_egg .recipe_items_egg .menu_name p {
+.recipe_tofu .recipe_items_tofu .menu_name p {
   margin: 30px 10px 10px 10px;
-  line-height: 2;
   font-size: 18px;
 }
 
-.recipe_egg .recipe_items_egg .recipe_item1_egg .menu_title img {
-  margin: 20px 20px 0px 10px;
+.recipe_tofu .recipe_items_tofu .recipe_item1_tofu .menu_title img {
+  margin: 10px 10px 10px 10px;
   width: 170px;
   height: 170px;
 }
-.recipe_egg .recipe_items_egg .recipe_item2_egg .menu_title img {
-  margin: 10px;
-  width: 180px;
-  height: 180px;
+.recipe_tofu .recipe_items_tofu .recipe_item2_tofu .menu_title img {
+  width: 200px;
+  height: auto;
 }
-.recipe_egg .recipe_items_egg .recipe_item2_egg .menu_name {
-  margin: 0px 0px 0px 30px;
+.recipe_tofu .recipe_items_tofu .recipe_item1_tofu .menu_name {
+  margin: 0px 0px 0px 10px;
 }
 
-/* egg_recycling */
-.recycling_egg {
+/* tofu_recycling */
+.recycling_tofu {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  align-self: right;
-  margin: 0px 140px 70px 140px;
+  align-self: left;
+  margin: 70px 140px 70px 140px;
 }
-.recycling_egg .recycling_title_egg {
-  margin-right: 60px;
+.recycling_tofu .recycling_title_tofu {
+  margin-left: 60px;
   margin-bottom: 30px;
-  text-align: right;
+  text-align: left;
   line-height: 2;
 }
-.recycling_egg .recycling_title_egg h3 {
+.recycling_tofu .recycling_title_tofu h3 {
   font-size: 40px;
 }
-.recycling_egg .recycling_title_egg p {
+.recycling_tofu .recycling_title_tofu p {
   font-size: 15px;
   color: rgb(116, 116, 116);
 }
-.recycling_egg .recycling_items_egg {
+.recycling_tofu .recycling_items_tofu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: left;
 }
-.recycling_egg .recycling_items_egg .recycling_item1_egg {
+.recycling_tofu .recycling_items_tofu .recycling_item1_tofu {
   height: 450px;
   width: 800px;
   margin: 40px;
   border-radius: 30px;
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  margin-left: 400px;
 }
-.recycling_egg .recycling_items_egg .recycling_item1_egg .menu_title {
+.recycling_tofu .recycling_items_tofu .recycling_item1_tofu .menu_title {
   display: flex;
   margin: 30px;
   margin-bottom: 50px;
   flex-direction: row;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item1_egg
+.recycling_tofu
+  .recycling_items_tofu
+  .recycling_item1_tofu
   .menu_title
   img {
   height: 200px;
   width: auto;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item1_egg
+.recycling_tofu
+  .recycling_items_tofu
+  .recycling_item1_tofu
   .menu_title
   h3 {
   margin: 30px 200px 0px 30px;
   font-size: 40px;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item1_egg
+.recycling_tofu
+  .recycling_items_tofu
+  .recycling_item1_tofu
   .menu_title
   h4 {
   margin: 5px 60px 20px 30px;
   font-size: 25px;
 }
-.recycling_egg .recycling_items_egg .recycling_item2_egg .menu_title {
+.recycling_tofu .recycling_items_tofu .recycling_item2_tofu .menu_title {
   display: flex;
   margin: 30px;
   margin-bottom: 50px;
   flex-direction: row;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item2_egg
+.recycling_tofu
+  .recycling_items_tofu
+  .recycling_item2_tofu
   .menu_title
   img {
   height: 200px;
   width: auto;
   margin: 40px 30px 40px 30px;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item2_egg
+.recycling_tofu
+  .recycling_items_tofu
+  .recycling_item2_tofu
   .menu_title
   h3 {
   margin: 30px 100px 0px 30px;
   font-size: 40px;
 }
-.recycling_egg
-  .recycling_items_egg
-  .recycling_item2_egg
+.recycling_tofu
+  .recycling_items_tofu
+  .recycling_item2_tofu
   .menu_title
   h4 {
   margin: 5px 60px 40px 30px;
   font-size: 25px;
 }
 
-.recycling_egg .recycling_items_egg .recycling_item1_egg p {
+.recycling_tofu .recycling_items_tofu .recycling_item1_tofu p {
   margin: 0px 40px 0px 60px;
   font-size: 21px;
   line-height: 2;
 }
-.recycling_egg .recycling_items_egg .recycling_item2_egg p {
+.recycling_tofu .recycling_items_tofu .recycling_item2_tofu p {
   margin: 10px 40px 0px 30px;
   font-size: 21px;
   line-height: 2;
 }
-.recycling_egg .recycling_items_egg .recycling_item2_egg {
+.recycling_tofu .recycling_items_tofu .recycling_item2_tofu {
   height: 350px;
   width: 1160px;
   margin: 40px;
@@ -308,47 +305,27 @@ body {
 }
 
 /* 배경 꾸미기 */
-.page_egg .page_egg1 {
+.page_tofu .page_tofu1 {
+  position: absolute;
+  top: 1200px;
+  left: -50;
+}
+.page_tofu .page_tofu2 {
   position: absolute;
   top: 2100px;
-  left: 850px;
+  left: 1150px;
 }
-.page_egg .page_egg2 {
+.page_tofu .page_tofu3 {
   position: absolute;
-  top: 1250px;
-  left: -40px;
+  top: 1100px;
+  left: -270px;
 }
-.page_egg .page_egg3 {
-  position: absolute;
-  top: 890px;
-  left: 970px;
-}
-.page_egg .page_egg4 {
-  position: absolute;
-  top: 2400px;
-  left: 0px;
-}
-.page_egg .page_egg1 img {
-  width: 400px;
-  height: auto;
-}
-.page_egg .page_egg2 img {
-  width: 350px;
-  height: auto;
-}
-.page_egg .page_egg3 img {
-  width: 300px;
-  height: auto;
-}
-.page_egg .page_egg4 img {
-  width: 500px;
-  height: auto;
-}
+.page_tofu .page_tofu1 img {
 
-
+}
 
 @media screen and (max-width: 1400px) {
-  .page_egg {
+  .page_tofu {
     display: none;
   }
 }

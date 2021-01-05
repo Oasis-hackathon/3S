@@ -13,14 +13,27 @@ body {
   overflow: hidden;
 }
 
-/* yogurt_visual */
 
-.visual_yogurt .explain_yogurt {
+/* yogurt_visual */
+.background_yogurt{
+  display: absolute;
+  width: 100vw;
+  height: 600px;
+  background-image: url(/image/foods/yogurt_full.jpg);
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.visual_text_yogurt {
+  opacity: 1;
+}
+.visual_yogurt .visual_text_yogurt .explain_yogurt {
   position: absolute;
-  top: 15%;
+  margin-top: 120px;
   right: 65%;
   z-index: 1;
-  color: white;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #95ffa4;
 }
 .visual_yogurt .explain_yogurt p {
   font-style: oblique;
@@ -34,21 +47,20 @@ body {
 .visual_yogurt .dates_yogurt {
   position: absolute;
   top: 170%;
+  white-space: nowrap;
 }
 .visual_yogurt .dates_yogurt h4 {
-  display: inline-block;
   font-size: 55px;
   top: 50%;
 }
 .visual_yogurt .dates_yogurt p {
-  display: inline-block;
   font-size: 17px;
   text-align: left;
 }
 
 .visual_yogurt .main_yogurt img {
   position: absolute;
-  top: 15%;
+  margin-top: 120px;
   left: 65%;
   border-radius: 5%;
   height: 330px;
@@ -56,12 +68,6 @@ body {
   object-fit: cover;
   z-index: 1;
   box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
-}
-.visual_yogurt .background_yogurt img {
-  height: 600px;
-  width: 100vw;
-  object-fit: cover;
-  opacity: 0.9;
 }
 
 /* yogurt_storage */

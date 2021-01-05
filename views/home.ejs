@@ -17,7 +17,9 @@
                                 <label for="slide03" class="left"></label>
                                 <div class="textbox">
                                     <h3>잠깐! 냉장고 정리 하시나요?</h3>
-                                    <p>'유통기한'과 '소비기한'의 차이점을 아시나요?</p>
+                                    <p>'유통기한'과 '소비기한'의 차이점을 아시나요?<br>
+
+                                    </p>
                                 </div>
                                 <img src="image/green_withpic.png">
                                 <label for="slide02" class="right"></label>
@@ -58,65 +60,94 @@
                         <h2 class="explain-title">
                             유통기한? 소비기한?
                         </h2>
-                        <p class="explain-desc">
+                        <div class="explain-desc">
                             <strong>유통기한</strong> : 제품의 제조일로부터 소비자에게 유통, 판매가 허용되는 기한<br>
                             <strong>소비기한</strong> : 표시된 보관 조건에서 소비하여도 안전에 이상이 없는 기한
-                        </p>
-                        <div class="button-area">
-                            <a href="#"><button>소비기한에 대해 더 알아보기 &rarr; </button></a>
                         </div>
+                            유통기한 경과로 폐기되는 사회적 비용
+                            <strong>연간 1조 5400억원</strong>
+                        <div class="button-area">
+                            <a href="/explain"><button>소비기한에 대해 더 알아보기 &rarr; </button></a>
+                        </div>
+                    </p>
                     </div>
 ​
                     <div class="col-12 col-md-6">
                         <h2 class="explain-title">
-                            유통기한 경과로 버려지는 식품들
+                            소비기한 : 식품소비의 최종시한
                         </h2>
-                        <p class="explain-desc">식품의약품안전처에 따르면 ,우리나라에서 한 해동안 발생하는 유통기한 경과로 버려지는 가공식품 폐기 비용은 연간 1조 3000억 원이 넘는 것으로 예상된다.<br>
-                            또한 녹색소비자연대에 따르면, 소비자의 56%는 유통기한을 식품 폐기 시점으로 인식하고 있다
+                        <p class="explain-desc">
+                            식품이 제조되어 유통과정을 거쳐, 소비자에게 전달된 후 소비자가 소비해도 건강이나 안전에 문제가 없을 것으로 인정되는 소비최종시한을 말한다. <br>식품을 섭취해도 건강이나 안전에 이상이 없을 것으로 인정되는 소비 최종시한으로 유통기한보다 길다.
                         </p>
                         <div id="explain-detail">
                             <div class="explain-detail">
-                                <strong>56 / </strong>
+                                <strong>use by date </strong>
                                 <!--<p>유통기한을 식품 폐기 시점으로 인식하는 소비자의 비율, 56%</p>-->
                             </div>
-                            <div class="explain-detail">
-                                <strong>/ 130,000,000,000</strong>
-                                <!--<p>연간 유통기한 경과 가공식품 폐기 비용, 1조 3000억</p>-->
-                            </div>
+                           <!--< <div class="explain-detail">
+                                <strong> 1조3000억원</strong>
+                                p>연간 유통기한 경과 가공식품 폐기 비용, 1조 3000억</p>
+                            </div>-->
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>        
+
+        <div class="ratio">
+            <div class="container">
+                <ul>
+                    <li>
+                        <strong class="trash-title">늘어가는 음식물 쓰레기양</strong>
+                        <p>연간 1만 5천톤. 늘어만 가고 있는 음식물 쓰레기양,
+                            그 중, 먹을 수 있었던 음식이 적지 않다는 걸 아시나요?</p>
+                    </li>
+                    <li>
+                        <strong class="ratio-title">
+                            유통기한을 식품 폐기 시점으로 인식하는 소비자의 비율
+                        </strong>
+                        <h5 class="ratio-desc">56%</h5>
+
+                    </li>
+                    
+                </ul>
             </div>
         </div>
 ​
 <div class="foods">
     <div class="container">
-        <div class="section-text">
-            <h3 class="section-title">
-                음식들의 <br>
-                소비기한 알아보기
-            </h3>
-            <p class="section-desc">각 음식별 보관방법과 활용 방법을 확인하세요!</p>
+        <div class="inner">
+            <div class="section-text">
+                <h3 class="section-title">
+                    음식들의 <br>
+                    소비기한 알아보기
+                </h3>
+                <p class="section-desc">각 음식별 보관방법과 활용 방법을 확인하세요!</p>
+            </div>
+            <ul class="food-list ">
+                <% for(var item of cdata.foods){ %>
+                        <li class="food-li-<%=item.engName%>">
+                            <a href="<%= item.href %>">
+                            <div class="food-img">
+                                <img src="<%= item.img %>" alt="<% item.name %>">
+                            </div>
+                            <div class="food-text">
+                                <% if(item.name ==="준비중"){%>
+                                    <h3><%= item.name %></h3>
+                                <%} else{%>
+                                    <h3 class="food-title">
+                                        <%= item.name %>의 소비기한을 알아보고 지구<br> 지키기에 동참하세요🌏
+                                    </h3>
+                                   <p><%= item.usebydate %></p> 
+                                <%}%>
+                                <p class="food-desc">올바른 보관방법, 소비기한을 알아보고 재료를 활용할 수 있는 다양한 방법을 알아보세요! </p>
+                            </div>
+                            </a>
+                        </li>
+                   
+                <% } %>
+            </ul>
         </div>
-        <ul class="food-list ">
-            <% for(var item of cdata.foods){ %>
-                <a href="<%= item.href %>">
-                    <li class="food-li-<%=item.engName%>">
-                        <img src="<%= item.img %>" alt="<% item.name %>">
-                        <div class="food-text">
-                            <% if(item.name ==="준비중"){%>
-                                <h3><%= item.name %></h3>
-                            <%} else{%>
-                                <h3 class="food-title">
-                                    <%= item.name %>의 소비기한을 알아보고<br> 지구 지키기에 동참하세요🌏
-                                </h3>
-                            <%}%>
-                            <p class="food-desc"><%= item.desc %></p>
-                        </div>
-                    </li>
-                </a>
-            <% } %>
-        </ul>
     </div>
 </div>
 </div>
