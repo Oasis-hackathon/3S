@@ -63,7 +63,7 @@ export const foodsearch = async (req, res) => {
 
 
 
-export const foods = (req, res) => res.send('FOOD INDEX');
+export const foods = (req, res) => res.render('foods');
 export const yogurt = (req, res) => res.render('yogurt');
 export const dubu =(req, res) => res.render('dubu');
 export const milk =(req, res) => res.render('milk');

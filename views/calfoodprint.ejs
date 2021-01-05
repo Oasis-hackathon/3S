@@ -4,6 +4,10 @@
     <%- include ('./header') %>
     <section class="calculate">
         <div class="calculate-content">
+            <% if( !foodname || !expiration){%>
+                <p>calculate</p>
+            <%} else {%> 
+                
                 <h1 class="calculate-title">🌏 Foodprint 소비기한 계산기 🌏</h1>
                 <p>음식 이름 <%-foodname%> </p>
                 <p>유통기한 <%-expiration%></p>
@@ -11,6 +15,7 @@
                 <p>소비기한 까지 남은 날짜는<div class="strong">
                     <%-diffDays%>일
                 </div> 입니다.</p>
+            <%}%>
         </div>
         
     </section>

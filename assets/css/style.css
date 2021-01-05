@@ -334,6 +334,10 @@ section{
   clear: both;
 }
 
+.foods .food-li-yogurt{
+  margin-top: -450px;
+}
+
 .food-text{
   padding:20px 15px;
 }
@@ -447,15 +451,17 @@ section{
   }
   
 }
+@media screen and (max-width: 980px){
+  .foods .food-li-yogurt{
+    margin-top:10px;
+  }
+}
 
 @media screen and (max-width: 980px){
   .foods [class*="food-li-"]{
       max-width: 500px;
   }
   .ratio .trash-title::after {
-
-
-
     background-size: contain;
 
   }
