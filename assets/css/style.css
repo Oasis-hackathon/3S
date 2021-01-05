@@ -346,10 +346,27 @@ section{
 }
 
 /* Calculate */
+.calculate p{
+  display:inline-block;
+}
+
 .calculate{
   text-align: center;
 }
 
+.calculate .calculate-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.calculate .calculate-content *{
+  margin-bottom: 10px;
+}
+
+.calculate .strong{
+  color:var(--main-color);
+  font-weight: bold;
+}
 
 
 /* Media query */
