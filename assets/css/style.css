@@ -184,6 +184,11 @@ section{
   transition-delay: 0.4s;
 }
 
+.visual .strong{
+  font-weight: bold;
+  
+}
+
 /* Explain */
 
 .explain {
@@ -237,8 +242,8 @@ section{
 }
 .ratio .ratio_background {
   width: 100vw;
-  height: 90vh;
-  background-color: #fffd82;
+  height: 100%;
+  background-color:#e2f6f0;
   border-bottom-right-radius: 70%;
   background-size: 100% 100%;
   display: flex;
@@ -386,6 +391,10 @@ section{
   font-weight: bold;
 }
 
+/* Footer */
+footer{
+  background-color: #f4f5f7;
+}
 
 /* Media query */
 
@@ -478,6 +487,16 @@ section{
   }
   .ratio .trash-title::after {
     background-size: contain;
+  }
 
+  .ratio .ratio_background .section .section1{
+    flex-direction: column;
+  }
+
+  .ratio .ratio_background .section .section2{
+    flex-direction: column;
+  }
+  .ratio .section2 img {
+      width:90%;
   }
 }

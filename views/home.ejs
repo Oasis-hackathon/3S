@@ -18,7 +18,9 @@
                                 <div class="textbox">
                                     <h3>잠깐! 냉장고 정리 하시나요?</h3>
                                     <p>'유통기한'과 '소비기한'의 차이점을 아시나요?<br>
-
+                                    </p>
+                                    <p>
+                                        <span class="strong">소비기한</span>을 알아보고 지구 지키기에 동참하세요🌏
                                     </p>
                                 </div>
                                 <img src="image/green_withpic.png">
@@ -69,7 +71,6 @@
                         <div class="button-area">
                             <a href="/explain"><button>소비기한에 대해 더 알아보기 &rarr; </button></a>
                         </div>
-                    </p>
                     </div>
 
                     <div class="col-12 col-md-6">
@@ -101,7 +102,7 @@
                     <div class="section1">
                         <img src="image/ratio.png">
                         <div class="section1_title">
-                            <h3>유통기한 != 소비기한</h3><br>
+                            <h3>유통기한 ≠ 소비기한</h3><br>
                             <p>유통기한을 식품 폐기일로 인식하는 소비자의 비율<br>
                             56% 내에 드셨다면, 이제부터는 달라진 소비자가 됩시다!</p>
                         </div>
@@ -131,7 +132,7 @@
                 </h3>
                 <p class="section-desc">각 음식별 보관방법과 활용 방법을 확인하세요!</p>
             </div>
-            <ul class="food-list ">
+            <ul class="food-list">
                 <% for(var item of cdata.foods){ %>
                         <li class="food-li-<%=item.engName%>">
                             <a href="<%= item.href %>">
