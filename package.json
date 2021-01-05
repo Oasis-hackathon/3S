@@ -18,9 +18,10 @@
     "morgan": "^1.10.0"
   },
   "scripts": {
-    "start": "babel-node init.js --delay 2"
+    "start": "nodemon --exec babel-node init.js --delay 2"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
-  }
+  },
+  "homepage": "https://6mn12j.github.io/foodprint/"
 }
